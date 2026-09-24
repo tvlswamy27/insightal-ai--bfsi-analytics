@@ -1,0 +1,3 @@
+-- This file intentionally left blank. 
+-- As local_infile = OFF is strictly specified in the environment,
+-- raw data ingestion is performed via Python batched inserts in run_etl.py.

@@ -1,0 +1,9 @@
+{
+  "row_counts": {
+    "customers": 2000,
+    "calls": 10000,
+    "conversations": 39770
+  },
+  "business_rules_violations": 0,
+  "leakage_violations": 0
+}

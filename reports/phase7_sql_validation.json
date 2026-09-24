@@ -1,0 +1,371 @@
+{
+    "total_files": 13,
+    "analytics_queries_executed": 25,
+    "validation_checks_executed": 17,
+    "successful_queries": 25,
+    "failed_queries": 0,
+    "validation_failures": 0,
+    "key_outputs": {
+        "executive_kpis": {
+            "total_calls": 9885,
+            "connected_calls": 6183.0,
+            "connection_rate": 0.6255,
+            "avg_call_duration_seconds": 36.56,
+            "containment_rate": 0.5205,
+            "escalation_rate": 0.3623,
+            "resolution_rate": 0.5617,
+            "task_completion_rate": 0.5693,
+            "fallback_rate": 0.1893,
+            "intent_recognition_accuracy": 0.8339,
+            "ptp_rate": 0.1339,
+            "successful_ptp_rate": 0.6292,
+            "collection_conversion_rate": 0.0843,
+            "successful_collection_amount": 2239430.79,
+            "outstanding_collected_ratio": 0.0119
+        }
+    },
+    "details": [
+        {
+            "file": "01_executive_kpis.sql",
+            "query_id": "EXE-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "01_executive_kpis.sql",
+            "query_id": "EXE-001",
+            "status": "PASS",
+            "execution_time_ms": 133.76,
+            "result_row_count": 1
+        },
+        {
+            "file": "02_call_operations.sql",
+            "query_id": "OPS-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "02_call_operations.sql",
+            "query_id": "OPS-001",
+            "status": "PASS",
+            "execution_time_ms": 32.58,
+            "result_row_count": 6
+        },
+        {
+            "file": "02_call_operations.sql",
+            "query_id": "OPS-002",
+            "status": "PASS",
+            "execution_time_ms": 17.29,
+            "result_row_count": 6
+        },
+        {
+            "file": "03_bot_performance.sql",
+            "query_id": "BOT-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "03_bot_performance.sql",
+            "query_id": "BOT-001",
+            "status": "PASS",
+            "execution_time_ms": 117.35,
+            "result_row_count": 6
+        },
+        {
+            "file": "04_intent_analytics.sql",
+            "query_id": "INT-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "04_intent_analytics.sql",
+            "query_id": "INT-001",
+            "status": "PASS",
+            "execution_time_ms": 82.61,
+            "result_row_count": 19
+        },
+        {
+            "file": "05_customer_journey.sql",
+            "query_id": "JRN-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "05_customer_journey.sql",
+            "query_id": "JRN-001",
+            "status": "PASS",
+            "execution_time_ms": 29.13,
+            "result_row_count": 1
+        },
+        {
+            "file": "06_escalation_analytics.sql",
+            "query_id": "ESC-001",
+            "status": "PASS",
+            "execution_time_ms": 1.01,
+            "result_row_count": 0
+        },
+        {
+            "file": "06_escalation_analytics.sql",
+            "query_id": "ESC-001",
+            "status": "PASS",
+            "execution_time_ms": 37.02,
+            "result_row_count": 4
+        },
+        {
+            "file": "07_collections_analytics.sql",
+            "query_id": "COL-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "07_collections_analytics.sql",
+            "query_id": "COL-001",
+            "status": "PASS",
+            "execution_time_ms": 30.54,
+            "result_row_count": 5
+        },
+        {
+            "file": "08_campaign_analytics.sql",
+            "query_id": "CMP-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "08_campaign_analytics.sql",
+            "query_id": "CMP-001",
+            "status": "PASS",
+            "execution_time_ms": 49.92,
+            "result_row_count": 7
+        },
+        {
+            "file": "09_customer_segment_analytics.sql",
+            "query_id": "SEG-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "09_customer_segment_analytics.sql",
+            "query_id": "SEG-001",
+            "status": "PASS",
+            "execution_time_ms": 82.2,
+            "result_row_count": 6
+        },
+        {
+            "file": "10_time_series_analytics.sql",
+            "query_id": "TME-001",
+            "status": "PASS",
+            "execution_time_ms": 0.91,
+            "result_row_count": 0
+        },
+        {
+            "file": "10_time_series_analytics.sql",
+            "query_id": "TME-001",
+            "status": "PASS",
+            "execution_time_ms": 48.98,
+            "result_row_count": 181
+        },
+        {
+            "file": "11_capacity_and_business_impact.sql",
+            "query_id": "ROI-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "11_capacity_and_business_impact.sql",
+            "query_id": "ROI-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 1
+        },
+        {
+            "file": "12_advanced_sql.sql",
+            "query_id": "ADV-001",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "12_advanced_sql.sql",
+            "query_id": "ADV-001",
+            "status": "PASS",
+            "execution_time_ms": 38.81,
+            "result_row_count": 100
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 0
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 10.98,
+            "result_row_count": 1,
+            "validation_id": "VAL-001",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 119.9,
+            "result_row_count": 1,
+            "validation_id": "VAL-001",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 15.15,
+            "result_row_count": 1,
+            "validation_id": "VAL-002",
+            "failure_count": 0.0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 33.77,
+            "result_row_count": 1,
+            "validation_id": "VAL-003",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 1,
+            "validation_id": "VAL-004",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 15.23,
+            "result_row_count": 1,
+            "validation_id": "VAL-005",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 1.26,
+            "result_row_count": 1,
+            "validation_id": "VAL-006",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 7.75,
+            "result_row_count": 1,
+            "validation_id": "VAL-007",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 1,
+            "validation_id": "VAL-008",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 9.0,
+            "result_row_count": 1,
+            "validation_id": "VAL-009",
+            "failure_count": 0.0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 1,
+            "validation_id": "VAL-010",
+            "failure_count": 0.0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 1,
+            "validation_id": "VAL-011",
+            "failure_count": 0.0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 16.67,
+            "result_row_count": 1,
+            "validation_id": "VAL-012",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 21.34,
+            "result_row_count": 1,
+            "validation_id": "VAL-013",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 11.79,
+            "result_row_count": 1,
+            "validation_id": "VAL-014",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        },
+        {
+            "file": "13_sql_validation.sql",
+            "query_id": "VAL-ALL",
+            "status": "PASS",
+            "execution_time_ms": 0.0,
+            "result_row_count": 1,
+            "validation_id": "VAL-015",
+            "failure_count": 0,
+            "validation_status": "PASS"
+        }
+    ]
+}

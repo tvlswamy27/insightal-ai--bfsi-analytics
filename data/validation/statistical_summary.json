@@ -1,0 +1,15 @@
+{
+  "total_calls": 10000,
+  "connected_calls": 6264,
+  "connection_rate": 0.6264,
+  "average_duration": 54.278097062579825,
+  "containment_rate": 0.519316730523627,
+  "resolution_rate": 0.5601851851851852,
+  "escalation_rate": 0.36334610472541506,
+  "ptp_rate": 0.1331417624521073,
+  "intent_accuracy": 0.8340349740932642,
+  "intent_correct": 10302,
+  "intent_eligible": 12352,
+  "fallback_turns": 7533,
+  "average_max_attempt": 1.985383064516129
+}

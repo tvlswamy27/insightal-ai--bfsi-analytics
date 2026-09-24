@@ -1,0 +1,37 @@
+weights:
+  completeness: 0.20
+  uniqueness: 0.15
+  validity: 0.20
+  consistency: 0.15
+  referential: 0.15
+  business_rules: 0.10
+  statistical: 0.05
+
+baseline:
+  total_calls: 10000
+  connected_calls: 6264
+  connection_rate: 0.6264
+  average_call_duration: 54.2781
+  containment_rate: 0.5193167
+  resolution_rate: 0.5601852
+  escalation_rate: 0.3633461
+  ptp_rate: 0.1331418
+  intent_accuracy: 0.83403497
+  average_maximum_attempts: 1.98538
+  intent_correct: 10302
+  intent_eligible: 12352
+  fallback_turns: 7533
+
+statistical_warnings:
+  fallback_rate_max: 0.30
+  negative_sentiment_rate_max: 0.80
+  escalation_rate_max: 0.50
+  containment_rate_min: 0.30
+  resolution_rate_min: 0.30
+
+domains:
+  genders: ["Male", "Female", "Non-Binary", "Other"]
+  call_statuses: ["Completed", "Dropped", "Missed", "Busy", "Failed"]
+  connection_statuses: ["Connected", "No Answer", "Voicemail", "Failed"]
+  speakers: ["Customer", "Bot"]
+  sentiments: ["Positive", "Neutral", "Negative"]

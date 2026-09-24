@@ -1,0 +1,1036 @@
+table,row_identifier,anomaly_type,column,original_value,corrupted_value,random_seed
+raw_customers,949,invalid_foreign_key,customer_type,SME,SME_BAD,42
+raw_customers,941,invalid_foreign_key,age,49,1000048,42
+raw_customers,1616,missing_value,age,47,nan,42
+raw_customers,301,invalid_numeric,customer_type,Retail,Retail,42
+raw_customers,1906,missing_value,customer_type,Retail,nan,42
+raw_customers,598,invalid_foreign_key,city,Vijayawada,Vijayawada_BAD,42
+raw_customers,455,missing_value,age,27.0,nan,42
+raw_customers,1179,duplicate,city,Bengaluru,ROW_DUPLICATED,42
+raw_customers,112,missing_value,customer_type,Retail,nan,42
+raw_customers,1080,missing_value,city,Bengaluru,nan,42
+raw_customers,164,missing_value,city,Hyderabad,nan,42
+raw_customers,434,invalid_timestamp,age,37.0,NaT,42
+raw_customers,719,invalid_foreign_key,customer_type,Retail,Retail_BAD,42
+raw_customers,1140,invalid_timestamp,city,Delhi,NaT,42
+raw_customers,402,invalid_timestamp,age,41.0,NaT,42
+raw_customers,1306,invalid_numeric,age,24.0,24.0,42
+raw_customers,1310,invalid_numeric,customer_type,Retail,Retail,42
+raw_customers,1757,missing_value,age,36.0,nan,42
+raw_customers,675,invalid_foreign_key,city,Delhi,Delhi_BAD,42
+raw_customers,859,missing_value,city,Hyderabad,nan,42
+raw_customers,579,duplicate,customer_type,Retail,ROW_DUPLICATED,42
+raw_customers,1073,invalid_timestamp,customer_type,Corporate,NaT,42
+raw_customers,365,invalid_numeric,city,Delhi,Delhi,42
+raw_customers,1650,missing_value,age,47.0,nan,42
+raw_customers,572,duplicate,age,33.0,ROW_DUPLICATED,42
+raw_customers,4,invalid_timestamp,city,Mumbai,NaT,42
+raw_customers,979,invalid_foreign_key,city,Mumbai,Mumbai_BAD,42
+raw_customers,1021,missing_value,age,28.0,nan,42
+raw_customers,840,invalid_numeric,age,46.0,46.0,42
+raw_customers,1210,invalid_numeric,age,42.0,42.0,42
+raw_customers,540,missing_value,customer_type,Retail,nan,42
+raw_customers,341,duplicate,customer_type,Retail,ROW_DUPLICATED,42
+raw_customers,119,duplicate,customer_type,Retail,ROW_DUPLICATED,42
+raw_customers,1585,duplicate,city,Kolkata,ROW_DUPLICATED,42
+raw_customers,446,invalid_numeric,age,49.0,49.0,42
+raw_customers,442,missing_value,age,35.0,nan,42
+raw_customers,750,duplicate,city,Bengaluru,ROW_DUPLICATED,42
+raw_customers,892,invalid_foreign_key,age,30.0,30.0_BAD,42
+raw_customers,368,duplicate,customer_type,Retail,ROW_DUPLICATED,42
+raw_customers,372,invalid_foreign_key,customer_type,Retail,Retail_BAD,42
+raw_calls,9632,duplicate,call_start_time,2026-02-02 17:40:28,ROW_DUPLICATED,42
+raw_calls,7278,duplicate,customer_key,1470,ROW_DUPLICATED,42
+raw_calls,1626,invalid_timestamp,customer_key,326,NaT,42
+raw_calls,1518,missing_value,customer_key,303,nan,42
+raw_calls,8629,missing_value,days_past_due_at_call,40,nan,42
+raw_calls,1062,duplicate,call_start_time,2026-06-11 17:35:14,ROW_DUPLICATED,42
+raw_calls,4109,invalid_numeric,customer_key,832,832,42
+raw_calls,4029,duplicate,customer_key,815,ROW_DUPLICATED,42
+raw_calls,1211,invalid_numeric,call_duration_seconds,70,-70,42
+raw_calls,3016,invalid_numeric,call_duration_seconds,6,-6,42
+raw_calls,6471,duplicate,call_duration_seconds,9,ROW_DUPLICATED,42
+raw_calls,9224,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,3317,invalid_numeric,customer_key,665,665,42
+raw_calls,7168,duplicate,days_past_due_at_call,0.0,ROW_DUPLICATED,42
+raw_calls,6154,missing_value,customer_key,1244,nan,42
+raw_calls,5351,invalid_numeric,customer_key,1087,1087,42
+raw_calls,1249,invalid_timestamp,customer_key,252,NaT,42
+raw_calls,2153,invalid_numeric,call_start_time,2026-04-24 13:19:50,2026-04-24 13:19:50,42
+raw_calls,349,invalid_numeric,call_duration_seconds,3,-3,42
+raw_calls,8136,invalid_timestamp,days_past_due_at_call,0.0,NaT,42
+raw_calls,1514,invalid_timestamp,call_duration_seconds,73,NaT,42
+raw_calls,4709,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,9345,invalid_timestamp,customer_key,1879,NaT,42
+raw_calls,9118,invalid_timestamp,days_past_due_at_call,0.0,NaT,42
+raw_calls,2810,duplicate,call_duration_seconds,32,ROW_DUPLICATED,42
+raw_calls,9197,invalid_numeric,days_past_due_at_call,95.0,95.0,42
+raw_calls,5016,duplicate,customer_key,1017,ROW_DUPLICATED,42
+raw_calls,5812,missing_value,customer_key,1181,nan,42
+raw_calls,569,missing_value,days_past_due_at_call,2.0,nan,42
+raw_calls,3011,invalid_timestamp,customer_key,604,NaT,42
+raw_calls,3821,duplicate,call_start_time,2026-01-01 12:06:09,ROW_DUPLICATED,42
+raw_calls,6036,duplicate,customer_key,1224,ROW_DUPLICATED,42
+raw_calls,405,missing_value,call_start_time,2026-01-21 10:16:42,nan,42
+raw_calls,673,invalid_numeric,customer_key,134,134,42
+raw_calls,2411,invalid_timestamp,call_duration_seconds,57,NaT,42
+raw_calls,7768,missing_value,call_duration_seconds,73,nan,42
+raw_calls,3088,invalid_numeric,call_start_time,2026-03-19 12:38:48,2026-03-19 12:38:48,42
+raw_calls,2234,invalid_timestamp,call_start_time,2026-06-28 15:36:39,NaT,42
+raw_calls,8671,invalid_timestamp,customer_key,1748,NaT,42
+raw_calls,613,invalid_numeric,call_start_time,2026-06-23 15:46:25,2026-06-23 15:46:25,42
+raw_calls,8291,missing_value,call_duration_seconds,52,nan,42
+raw_calls,585,invalid_foreign_key,call_start_time,2026-01-10 08:26:56,2026-01-10 08:26:56_BAD,42
+raw_calls,3052,invalid_foreign_key,days_past_due_at_call,0.0,0.0_BAD,42
+raw_calls,7875,duplicate,days_past_due_at_call,72.0,ROW_DUPLICATED,42
+raw_calls,864,invalid_numeric,call_duration_seconds,9,9,42
+raw_calls,581,invalid_numeric,call_duration_seconds,67,67,42
+raw_calls,368,invalid_foreign_key,call_start_time,2026-06-14 09:37:55,2026-06-14 09:37:55_BAD,42
+raw_calls,4639,invalid_foreign_key,days_past_due_at_call,0.0,0.0_BAD,42
+raw_calls,3753,missing_value,days_past_due_at_call,51.0,nan,42
+raw_calls,2030,invalid_timestamp,call_start_time,2026-04-15 16:23:39,NaT,42
+raw_calls,106,missing_value,customer_key,20,nan,42
+raw_calls,5163,invalid_foreign_key,days_past_due_at_call,0.0,0.0_BAD,42
+raw_calls,9432,missing_value,call_duration_seconds,5,nan,42
+raw_calls,1919,invalid_numeric,call_start_time,2026-03-02 16:46:33,2026-03-02 16:46:33,42
+raw_calls,1098,missing_value,call_duration_seconds,12,nan,42
+raw_calls,7960,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,9365,invalid_numeric,days_past_due_at_call,78.0,78.0,42
+raw_calls,2981,missing_value,call_duration_seconds,65,nan,42
+raw_calls,3188,missing_value,call_start_time,2026-01-16 11:30:07,nan,42
+raw_calls,4354,invalid_numeric,customer_key,879,879,42
+raw_calls,7254,invalid_timestamp,call_start_time,2026-02-21 19:10:55,NaT,42
+raw_calls,556,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,7171,invalid_foreign_key,call_duration_seconds,65,65_BAD,42
+raw_calls,90,invalid_numeric,call_duration_seconds,42,42,42
+raw_calls,4033,invalid_foreign_key,call_start_time,2026-06-02 19:45:36,2026-06-02 19:45:36_BAD,42
+raw_calls,5354,invalid_foreign_key,days_past_due_at_call,0.0,0.0_BAD,42
+raw_calls,6734,duplicate,call_duration_seconds,30,ROW_DUPLICATED,42
+raw_calls,7381,duplicate,customer_key,1488,ROW_DUPLICATED,42
+raw_calls,5975,invalid_numeric,customer_key,1214,1214,42
+raw_calls,6039,invalid_foreign_key,call_start_time,2026-02-08 14:13:51,2026-02-08 14:13:51_BAD,42
+raw_calls,4605,duplicate,customer_key,937,ROW_DUPLICATED,42
+raw_calls,9147,invalid_numeric,call_start_time,2026-06-30 17:04:56,2026-06-30 17:04:56,42
+raw_calls,5748,duplicate,call_start_time,2026-05-27 16:53:11,ROW_DUPLICATED,42
+raw_calls,87,duplicate,call_start_time,2026-01-19 10:11:07,ROW_DUPLICATED,42
+raw_calls,7588,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,2291,missing_value,customer_key,460,nan,42
+raw_calls,9460,duplicate,call_start_time,2026-04-30 10:08:17,ROW_DUPLICATED,42
+raw_calls,4129,missing_value,call_duration_seconds,10,nan,42
+raw_calls,3469,invalid_timestamp,customer_key,697,NaT,42
+raw_calls,3653,invalid_timestamp,days_past_due_at_call,80.0,NaT,42
+raw_calls,9934,duplicate,customer_key,1992,ROW_DUPLICATED,42
+raw_calls,9915,duplicate,call_duration_seconds,8,ROW_DUPLICATED,42
+raw_calls,4530,invalid_timestamp,customer_key,920,NaT,42
+raw_calls,3989,invalid_foreign_key,call_duration_seconds,67,67_BAD,42
+raw_calls,6292,invalid_numeric,call_duration_seconds,37,37,42
+raw_calls,339,missing_value,days_past_due_at_call,77.0,nan,42
+raw_calls,2426,duplicate,customer_key,485,ROW_DUPLICATED,42
+raw_calls,5753,invalid_numeric,call_duration_seconds,13,13,42
+raw_calls,8447,duplicate,customer_key,1703,ROW_DUPLICATED,42
+raw_calls,3831,missing_value,customer_key,772,nan,42
+raw_calls,8923,invalid_timestamp,days_past_due_at_call,0.0,NaT,42
+raw_calls,410,invalid_timestamp,call_duration_seconds,34,NaT,42
+raw_calls,6048,invalid_numeric,call_duration_seconds,42,42,42
+raw_calls,593,missing_value,call_duration_seconds,56,nan,42
+raw_calls,5553,duplicate,customer_key,1126,ROW_DUPLICATED,42
+raw_calls,2294,invalid_timestamp,customer_key,460,NaT,42
+raw_calls,869,missing_value,call_start_time,2026-01-17 14:33:54,nan,42
+raw_calls,9606,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,5078,duplicate,days_past_due_at_call,0.0,ROW_DUPLICATED,42
+raw_calls,490,invalid_timestamp,call_duration_seconds,13,NaT,42
+raw_calls,8506,missing_value,customer_key,1718,nan,42
+raw_calls,3339,invalid_timestamp,customer_key,669,NaT,42
+raw_calls,9940,missing_value,call_duration_seconds,64,nan,42
+raw_calls,4126,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,2600,missing_value,call_duration_seconds,92,nan,42
+raw_calls,5161,missing_value,customer_key,1046,nan,42
+raw_calls,1809,duplicate,call_start_time,2026-05-15 17:35:19,ROW_DUPLICATED,42
+raw_calls,3150,duplicate,days_past_due_at_call,0.0,ROW_DUPLICATED,42
+raw_calls,4886,duplicate,call_start_time,2026-01-12 09:44:30,ROW_DUPLICATED,42
+raw_calls,4788,duplicate,call_duration_seconds,51,ROW_DUPLICATED,42
+raw_calls,2105,missing_value,call_start_time,2026-02-15 14:34:15,nan,42
+raw_calls,7383,invalid_timestamp,days_past_due_at_call,0.0,NaT,42
+raw_calls,4970,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,9603,duplicate,call_start_time,2026-04-15 10:20:40,ROW_DUPLICATED,42
+raw_calls,5827,missing_value,call_duration_seconds,6,nan,42
+raw_calls,6861,invalid_timestamp,call_start_time,2026-02-20 10:27:34,NaT,42
+raw_calls,9075,duplicate,days_past_due_at_call,0.0,ROW_DUPLICATED,42
+raw_calls,5360,invalid_foreign_key,days_past_due_at_call,0.0,0.0_BAD,42
+raw_calls,999,duplicate,days_past_due_at_call,0.0,ROW_DUPLICATED,42
+raw_calls,1660,duplicate,call_duration_seconds,7,ROW_DUPLICATED,42
+raw_calls,1861,duplicate,call_start_time,2026-04-17 18:07:56,ROW_DUPLICATED,42
+raw_calls,7952,missing_value,customer_key,1603,nan,42
+raw_calls,3354,invalid_numeric,customer_key,673,673,42
+raw_calls,8736,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,1295,duplicate,call_start_time,2026-01-03 11:46:37,ROW_DUPLICATED,42
+raw_calls,5861,duplicate,days_past_due_at_call,0.0,ROW_DUPLICATED,42
+raw_calls,7575,missing_value,customer_key,1526,nan,42
+raw_calls,4201,duplicate,call_duration_seconds,16,ROW_DUPLICATED,42
+raw_calls,6634,duplicate,call_duration_seconds,110,ROW_DUPLICATED,42
+raw_calls,6486,missing_value,call_duration_seconds,80,nan,42
+raw_calls,5733,duplicate,customer_key,1165,ROW_DUPLICATED,42
+raw_calls,60,duplicate,customer_key,10,ROW_DUPLICATED,42
+raw_calls,4180,duplicate,call_duration_seconds,2,ROW_DUPLICATED,42
+raw_calls,4920,duplicate,days_past_due_at_call,0.0,ROW_DUPLICATED,42
+raw_calls,1541,invalid_foreign_key,customer_key,307,307_BAD,42
+raw_calls,2274,invalid_foreign_key,call_start_time,2026-01-12 15:04:22,2026-01-12 15:04:22_BAD,42
+raw_calls,3926,invalid_numeric,customer_key,791,791,42
+raw_calls,1393,duplicate,days_past_due_at_call,26.0,ROW_DUPLICATED,42
+raw_calls,4916,invalid_timestamp,customer_key,998,NaT,42
+raw_calls,928,invalid_timestamp,customer_key,190,NaT,42
+raw_calls,542,duplicate,customer_key,111,ROW_DUPLICATED,42
+raw_calls,294,invalid_foreign_key,customer_key,60,60_BAD,42
+raw_calls,6082,missing_value,customer_key,1230,nan,42
+raw_calls,6073,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,4415,invalid_foreign_key,days_past_due_at_call,31.0,31.0_BAD,42
+raw_calls,1148,invalid_numeric,customer_key,228,228,42
+raw_calls,697,missing_value,call_start_time,2026-03-02 19:09:09,nan,42
+raw_calls,618,duplicate,call_duration_seconds,7,ROW_DUPLICATED,42
+raw_calls,2963,missing_value,call_duration_seconds,3,nan,42
+raw_calls,6773,missing_value,call_start_time,2026-01-01 15:11:08,nan,42
+raw_calls,8584,missing_value,call_duration_seconds,7,nan,42
+raw_calls,7549,invalid_foreign_key,call_duration_seconds,1,1_BAD,42
+raw_calls,5612,invalid_foreign_key,days_past_due_at_call,0.0,0.0_BAD,42
+raw_calls,5788,invalid_foreign_key,call_start_time,2026-04-06 19:10:07,2026-04-06 19:10:07_BAD,42
+raw_calls,3844,missing_value,customer_key,775,nan,42
+raw_calls,9669,missing_value,customer_key,1936,nan,42
+raw_calls,5792,invalid_timestamp,call_start_time,2026-03-05 08:25:35,NaT,42
+raw_calls,6539,invalid_timestamp,call_start_time,2026-05-22 19:02:35,NaT,42
+raw_calls,2777,duplicate,customer_key,555,ROW_DUPLICATED,42
+raw_calls,7793,invalid_numeric,call_start_time,2026-01-03 18:45:51,2026-01-03 18:45:51,42
+raw_calls,6697,missing_value,call_duration_seconds,55,nan,42
+raw_calls,5591,invalid_foreign_key,call_duration_seconds,74,74_BAD,42
+raw_calls,7175,invalid_timestamp,customer_key,1446,NaT,42
+raw_calls,5350,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,9442,duplicate,customer_key,1897,ROW_DUPLICATED,42
+raw_calls,5971,invalid_numeric,call_start_time,2026-03-05 09:57:20,2026-03-05 09:57:20,42
+raw_calls,2322,invalid_timestamp,call_duration_seconds,38,NaT,42
+raw_calls,4540,missing_value,call_duration_seconds,74,nan,42
+raw_calls,2310,duplicate,call_duration_seconds,59,ROW_DUPLICATED,42
+raw_calls,2317,invalid_numeric,call_start_time,2026-03-02 09:25:08,2026-03-02 09:25:08,42
+raw_calls,7655,invalid_timestamp,days_past_due_at_call,0.0,NaT,42
+raw_calls,2726,missing_value,call_duration_seconds,85,nan,42
+raw_calls,6638,invalid_numeric,call_duration_seconds,74,74,42
+raw_calls,2969,invalid_foreign_key,days_past_due_at_call,0.0,0.0_BAD,42
+raw_calls,4427,invalid_foreign_key,call_start_time,2026-03-04 11:42:02,2026-03-04 11:42:02_BAD,42
+raw_calls,4988,missing_value,call_start_time,2026-06-26 10:48:35,nan,42
+raw_calls,1015,duplicate,days_past_due_at_call,93.0,ROW_DUPLICATED,42
+raw_calls,7979,invalid_foreign_key,customer_key,1607,1607_BAD,42
+raw_calls,5465,missing_value,customer_key,1111,nan,42
+raw_calls,1938,invalid_foreign_key,days_past_due_at_call,80.0,80.0_BAD,42
+raw_calls,8066,missing_value,customer_key,1625,nan,42
+raw_calls,6135,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,8298,missing_value,call_duration_seconds,33,nan,42
+raw_calls,9686,invalid_numeric,call_duration_seconds,62,62,42
+raw_calls,7379,invalid_numeric,customer_key,1488,1488,42
+raw_calls,2496,missing_value,call_duration_seconds,71,nan,42
+raw_calls,1354,invalid_timestamp,call_duration_seconds,7,NaT,42
+raw_calls,2824,missing_value,days_past_due_at_call,0.0,nan,42
+raw_calls,4803,missing_value,call_start_time,2026-02-03 19:33:49,nan,42
+raw_calls,9833,invalid_numeric,days_past_due_at_call,54.0,54.0,42
+raw_calls,8215,missing_value,days_past_due_at_call,43.0,nan,42
+raw_calls,5449,missing_value,call_duration_seconds,96,nan,42
+raw_calls,5482,duplicate,call_start_time,2026-01-09 09:18:29,ROW_DUPLICATED,42
+raw_calls,2425,missing_value,customer_key,485,nan,42
+raw_calls,9521,missing_value,customer_key,1912,nan,42
+raw_calls,3109,duplicate,call_start_time,2026-03-05 11:19:46,ROW_DUPLICATED,42
+raw_calls,8903,duplicate,customer_key,1792,ROW_DUPLICATED,42
+raw_calls,1563,invalid_foreign_key,days_past_due_at_call,67.0,67.0_BAD,42
+raw_calls,2252,invalid_numeric,days_past_due_at_call,0.0,0.0,42
+raw_calls,1359,invalid_foreign_key,call_duration_seconds,67,67_BAD,42
+raw_conversations,4406,missing_value,call_key,9515,nan,42
+raw_conversations,17332,invalid_numeric,timestamp,2026-06-12 11:48:00,2026-06-12 11:48:00,42
+raw_conversations,5549,invalid_timestamp,confidence_score,0.2047592445269473,NaT,42
+raw_conversations,26678,invalid_timestamp,call_key,5871.0,NaT,42
+raw_conversations,7028,missing_value,timestamp,2026-04-01 09:25:51,nan,42
+raw_conversations,11348,invalid_timestamp,timestamp,2026-03-07 17:23:43,NaT,42
+raw_conversations,35451,missing_value,timestamp,2026-06-13 09:00:59,nan,42
+raw_conversations,1471,invalid_foreign_key,timestamp,2026-04-19 19:42:18,2026-04-19 19:42:18_BAD,42
+raw_conversations,31651,invalid_foreign_key,call_key,4405.0,4405.0_BAD,42
+raw_conversations,486,missing_value,confidence_score,nan,nan,42
+raw_conversations,28164,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,16052,missing_value,timestamp,2026-01-21 10:57:28,nan,42
+raw_conversations,29294,invalid_foreign_key,call_key,8882.0,8882.0_BAD,42
+raw_conversations,32708,missing_value,timestamp,2026-05-23 08:23:13,nan,42
+raw_conversations,23838,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,24541,duplicate,timestamp,2026-04-07 15:48:56,ROW_DUPLICATED,42
+raw_conversations,3021,invalid_foreign_key,timestamp,2026-05-01 18:58:43,2026-05-01 18:58:43_BAD,42
+raw_conversations,31370,missing_value,confidence_score,nan,nan,42
+raw_conversations,7655,invalid_foreign_key,call_key,1663.0,1663.0_BAD,42
+raw_conversations,31467,missing_value,call_key,3315.0,nan,42
+raw_conversations,33998,invalid_foreign_key,timestamp,2026-01-06 11:42:28,2026-01-06 11:42:28_BAD,42
+raw_conversations,20113,invalid_timestamp,call_key,1959.0,NaT,42
+raw_conversations,10924,invalid_timestamp,timestamp,2026-01-29 15:22:04,NaT,42
+raw_conversations,1094,invalid_numeric,call_key,5572.0,5572.0,42
+raw_conversations,25424,invalid_foreign_key,timestamp,2026-01-02 16:29:02,2026-01-02 16:29:02_BAD,42
+raw_conversations,5373,missing_value,timestamp,2026-04-12 16:00:14,nan,42
+raw_conversations,12393,invalid_numeric,call_key,9355.0,9355.0,42
+raw_conversations,3885,missing_value,confidence_score,0.8969039589674549,nan,42
+raw_conversations,25248,duplicate,timestamp,2026-02-10 18:50:36,ROW_DUPLICATED,42
+raw_conversations,21364,missing_value,timestamp,2026-03-31 10:58:13,nan,42
+raw_conversations,7024,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,23738,duplicate,timestamp,2026-03-05 15:58:49,ROW_DUPLICATED,42
+raw_conversations,21315,duplicate,timestamp,2026-03-08 10:42:01,ROW_DUPLICATED,42
+raw_conversations,33552,invalid_numeric,call_key,625.0,625.0,42
+raw_conversations,6025,invalid_foreign_key,call_key,2285.0,2285.0_BAD,42
+raw_conversations,11717,invalid_numeric,confidence_score,0.8204359924340818,0.8204359924340818,42
+raw_conversations,25544,missing_value,call_key,3094.0,nan,42
+raw_conversations,27360,duplicate,timestamp,2026-04-01 12:00:11,ROW_DUPLICATED,42
+raw_conversations,6490,missing_value,timestamp,2026-01-02 19:18:19,nan,42
+raw_conversations,18760,missing_value,confidence_score,nan,nan,42
+raw_conversations,8023,invalid_timestamp,timestamp,2026-06-19 16:34:58,NaT,42
+raw_conversations,30913,missing_value,confidence_score,0.8627153339201258,nan,42
+raw_conversations,24240,missing_value,call_key,9332.0,nan,42
+raw_conversations,11664,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,9829,missing_value,confidence_score,0.5315291676789828,nan,42
+raw_conversations,31477,duplicate,timestamp,2026-03-25 17:02:35,ROW_DUPLICATED,42
+raw_conversations,36691,duplicate,call_key,5676.0,ROW_DUPLICATED,42
+raw_conversations,32285,invalid_timestamp,confidence_score,0.9426181053786132,NaT,42
+raw_conversations,11421,duplicate,call_key,4263.0,ROW_DUPLICATED,42
+raw_conversations,15723,duplicate,confidence_score,0.8237939611207628,ROW_DUPLICATED,42
+raw_conversations,36236,missing_value,call_key,1919.0,nan,42
+raw_conversations,22019,invalid_foreign_key,call_key,2746.0,2746.0_BAD,42
+raw_conversations,20677,missing_value,confidence_score,0.5365508393176286,nan,42
+raw_conversations,27711,invalid_timestamp,confidence_score,0.7495913290936203,NaT,42
+raw_conversations,9167,missing_value,timestamp,2026-01-13 11:39:53,nan,42
+raw_conversations,39485,duplicate,timestamp,2026-03-21 16:18:41,ROW_DUPLICATED,42
+raw_conversations,18873,invalid_foreign_key,call_key,2767.0,2767.0_BAD,42
+raw_conversations,33270,invalid_foreign_key,timestamp,2026-05-09 12:39:31,2026-05-09 12:39:31_BAD,42
+raw_conversations,16808,invalid_foreign_key,timestamp,2026-03-25 12:16:21,2026-03-25 12:16:21_BAD,42
+raw_conversations,31206,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,31566,invalid_numeric,call_key,9467.0,9467.0,42
+raw_conversations,22805,missing_value,call_key,3529.0,nan,42
+raw_conversations,28584,missing_value,confidence_score,nan,nan,42
+raw_conversations,716,missing_value,call_key,6661.0,nan,42
+raw_conversations,13183,missing_value,confidence_score,0.2883234981579883,nan,42
+raw_conversations,27232,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,1606,invalid_timestamp,call_key,8626.0,NaT,42
+raw_conversations,9515,missing_value,confidence_score,0.4925701802721848,nan,42
+raw_conversations,1074,invalid_timestamp,call_key,644.0,NaT,42
+raw_conversations,35956,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,37952,invalid_numeric,call_key,6014.0,6014.0,42
+raw_conversations,35964,missing_value,confidence_score,nan,nan,42
+raw_conversations,11948,duplicate,timestamp,2026-05-13 08:55:39,ROW_DUPLICATED,42
+raw_conversations,27647,invalid_numeric,confidence_score,0.6846342999729375,0.6846342999729375,42
+raw_conversations,15991,duplicate,confidence_score,0.6515724410197161,ROW_DUPLICATED,42
+raw_conversations,39072,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,28368,missing_value,confidence_score,nan,nan,42
+raw_conversations,28574,invalid_timestamp,timestamp,2026-03-30 08:52:47,NaT,42
+raw_conversations,3250,duplicate,timestamp,2026-05-02 14:23:57,ROW_DUPLICATED,42
+raw_conversations,14605,invalid_numeric,timestamp,2026-01-03 14:15:30,2026-01-03 14:15:30,42
+raw_conversations,10095,missing_value,call_key,664.0,nan,42
+raw_conversations,34592,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,4136,missing_value,call_key,1111.0,nan,42
+raw_conversations,16757,invalid_numeric,call_key,3848.0,3848.0,42
+raw_conversations,978,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,20960,invalid_foreign_key,call_key,8487.0,8487.0_BAD,42
+raw_conversations,39524,missing_value,timestamp,2026-01-16 17:16:00,nan,42
+raw_conversations,27558,missing_value,confidence_score,nan,nan,42
+raw_conversations,12689,duplicate,call_key,2276.0,ROW_DUPLICATED,42
+raw_conversations,27036,duplicate,timestamp,2026-03-25 09:55:56,ROW_DUPLICATED,42
+raw_conversations,11690,duplicate,timestamp,2026-03-01 12:02:49,ROW_DUPLICATED,42
+raw_conversations,30056,duplicate,timestamp,2026-02-22 11:34:12,ROW_DUPLICATED,42
+raw_conversations,6639,invalid_timestamp,confidence_score,0.9446412962252017,NaT,42
+raw_conversations,28905,missing_value,timestamp,2026-01-11 09:25:07,nan,42
+raw_conversations,34383,invalid_timestamp,timestamp,2026-01-23 15:06:54,NaT,42
+raw_conversations,27631,duplicate,timestamp,2026-05-10 09:46:40,ROW_DUPLICATED,42
+raw_conversations,8914,duplicate,call_key,3050.0,ROW_DUPLICATED,42
+raw_conversations,17397,missing_value,timestamp,2026-02-24 09:32:34,nan,42
+raw_conversations,12002,invalid_foreign_key,call_key,9669.0,9669.0_BAD,42
+raw_conversations,18489,invalid_foreign_key,call_key,5480.0,5480.0_BAD,42
+raw_conversations,12881,missing_value,timestamp,2026-03-28 18:32:19,nan,42
+raw_conversations,27020,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,7552,invalid_timestamp,timestamp,2026-02-21 14:07:55,NaT,42
+raw_conversations,27929,duplicate,call_key,5039.0,ROW_DUPLICATED,42
+raw_conversations,25178,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,30887,duplicate,call_key,9631.0,ROW_DUPLICATED,42
+raw_conversations,32286,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,9923,missing_value,call_key,9919.0,nan,42
+raw_conversations,27345,invalid_foreign_key,timestamp,2026-05-25 10:55:53,2026-05-25 10:55:53_BAD,42
+raw_conversations,1673,invalid_foreign_key,call_key,359.0,359.0_BAD,42
+raw_conversations,4685,duplicate,confidence_score,0.9474406501693576,ROW_DUPLICATED,42
+raw_conversations,8378,missing_value,confidence_score,nan,nan,42
+raw_conversations,9721,invalid_timestamp,call_key,5949.0,NaT,42
+raw_conversations,10718,invalid_foreign_key,call_key,8642.0,8642.0_BAD,42
+raw_conversations,5107,invalid_timestamp,timestamp,2026-06-08 08:22:28,NaT,42
+raw_conversations,31498,duplicate,call_key,4992.0,ROW_DUPLICATED,42
+raw_conversations,10417,duplicate,timestamp,2026-05-20 12:17:56,ROW_DUPLICATED,42
+raw_conversations,20323,missing_value,call_key,237.0,nan,42
+raw_conversations,27945,missing_value,confidence_score,0.7521217921942769,nan,42
+raw_conversations,23768,duplicate,call_key,5390.0,ROW_DUPLICATED,42
+raw_conversations,18559,invalid_foreign_key,confidence_score,0.6410556569404364,0.6410556569404364_BAD,42
+raw_conversations,33254,duplicate,timestamp,2026-03-25 19:33:24,ROW_DUPLICATED,42
+raw_conversations,15900,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,14873,missing_value,confidence_score,0.7091894350729863,nan,42
+raw_conversations,16197,duplicate,confidence_score,0.8192269692206421,ROW_DUPLICATED,42
+raw_conversations,24256,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,20892,invalid_numeric,timestamp,2026-04-01 14:01:38,2026-04-01 14:01:38,42
+raw_conversations,4090,duplicate,timestamp,2026-01-14 11:41:05,ROW_DUPLICATED,42
+raw_conversations,38871,missing_value,confidence_score,0.856261470121988,nan,42
+raw_conversations,23263,invalid_foreign_key,confidence_score,0.836872895061758,0.836872895061758_BAD,42
+raw_conversations,12097,duplicate,timestamp,2026-01-17 12:12:23,ROW_DUPLICATED,42
+raw_conversations,18154,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,29903,invalid_timestamp,confidence_score,0.8222081102997749,NaT,42
+raw_conversations,17501,invalid_timestamp,confidence_score,0.3599556084582445,NaT,42
+raw_conversations,12927,missing_value,confidence_score,0.7826165999984385,nan,42
+raw_conversations,9369,invalid_numeric,call_key,4326.0,4326.0,42
+raw_conversations,33091,missing_value,timestamp,2026-05-07 16:44:03,nan,42
+raw_conversations,293,invalid_timestamp,call_key,9535.0,NaT,42
+raw_conversations,28327,invalid_numeric,timestamp,2026-04-03 11:08:51,2026-04-03 11:08:51,42
+raw_conversations,22519,duplicate,timestamp,2026-06-11 11:30:25,ROW_DUPLICATED,42
+raw_conversations,7237,invalid_foreign_key,timestamp,2026-01-02 13:34:25,2026-01-02 13:34:25_BAD,42
+raw_conversations,13250,duplicate,call_key,1786.0,ROW_DUPLICATED,42
+raw_conversations,15015,invalid_numeric,call_key,5315.0,5315.0,42
+raw_conversations,24011,missing_value,timestamp,2026-03-09 16:01:32,nan,42
+raw_conversations,6906,invalid_foreign_key,timestamp,2026-06-02 10:37:07,2026-06-02 10:37:07_BAD,42
+raw_conversations,433,invalid_numeric,timestamp,2026-02-21 19:06:31,2026-02-21 19:06:31,42
+raw_conversations,21839,missing_value,call_key,6296.0,nan,42
+raw_conversations,26341,missing_value,timestamp,2026-03-09 12:42:53,nan,42
+raw_conversations,29335,duplicate,call_key,2777.0,ROW_DUPLICATED,42
+raw_conversations,29179,invalid_foreign_key,call_key,8741.0,8741.0_BAD,42
+raw_conversations,3040,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,11279,duplicate,timestamp,2026-06-29 09:33:05,ROW_DUPLICATED,42
+raw_conversations,9787,invalid_numeric,timestamp,2026-02-10 17:05:38,2026-02-10 17:05:38,42
+raw_conversations,31866,invalid_foreign_key,call_key,5045.0,5045.0_BAD,42
+raw_conversations,29122,invalid_foreign_key,timestamp,2026-05-08 09:38:20,2026-05-08 09:38:20_BAD,42
+raw_conversations,10776,invalid_foreign_key,timestamp,2026-01-05 17:56:09,2026-01-05 17:56:09_BAD,42
+raw_conversations,35521,missing_value,confidence_score,0.6668826776682625,nan,42
+raw_conversations,8780,invalid_timestamp,call_key,9610.0,NaT,42
+raw_conversations,23066,invalid_numeric,call_key,5323.0,5323.0,42
+raw_conversations,24705,invalid_foreign_key,call_key,3127.0,3127.0_BAD,42
+raw_conversations,15650,invalid_foreign_key,timestamp,2026-03-10 13:05:07,2026-03-10 13:05:07_BAD,42
+raw_conversations,4198,duplicate,timestamp,2026-05-30 11:17:19,ROW_DUPLICATED,42
+raw_conversations,12180,missing_value,timestamp,2026-03-12 13:33:12,nan,42
+raw_conversations,22926,missing_value,confidence_score,nan,nan,42
+raw_conversations,35916,missing_value,call_key,2593.0,nan,42
+raw_conversations,14384,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,21029,invalid_foreign_key,call_key,2240.0,2240.0_BAD,42
+raw_conversations,10698,missing_value,call_key,2489.0,nan,42
+raw_conversations,13854,invalid_foreign_key,timestamp,2026-02-14 13:14:08,2026-02-14 13:14:08_BAD,42
+raw_conversations,24888,invalid_foreign_key,timestamp,2026-03-12 10:52:02,2026-03-12 10:52:02_BAD,42
+raw_conversations,30786,missing_value,call_key,1078.0,nan,42
+raw_conversations,7345,missing_value,call_key,3404.0,nan,42
+raw_conversations,32465,invalid_timestamp,confidence_score,0.85646173493782,NaT,42
+raw_conversations,11118,missing_value,confidence_score,nan,nan,42
+raw_conversations,5626,duplicate,timestamp,2026-04-17 15:14:33,ROW_DUPLICATED,42
+raw_conversations,32886,invalid_timestamp,timestamp,2026-06-28 17:41:55,NaT,42
+raw_conversations,5469,invalid_timestamp,timestamp,2026-01-11 19:45:53,NaT,42
+raw_conversations,24595,missing_value,timestamp,2026-01-16 19:06:55,nan,42
+raw_conversations,27397,duplicate,call_key,4061.0,ROW_DUPLICATED,42
+raw_conversations,10701,missing_value,timestamp,2026-04-10 11:59:49,nan,42
+raw_conversations,29738,missing_value,call_key,9139.0,nan,42
+raw_conversations,5362,duplicate,call_key,6899.0,ROW_DUPLICATED,42
+raw_conversations,39029,missing_value,call_key,2883.0,nan,42
+raw_conversations,24551,duplicate,call_key,9716.0,ROW_DUPLICATED,42
+raw_conversations,13897,invalid_foreign_key,call_key,8400.0,8400.0_BAD,42
+raw_conversations,3774,missing_value,timestamp,2026-02-08 15:14:04,nan,42
+raw_conversations,11232,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,9306,duplicate,call_key,7239.0,ROW_DUPLICATED,42
+raw_conversations,12490,duplicate,call_key,5305.0,ROW_DUPLICATED,42
+raw_conversations,20706,invalid_foreign_key,call_key,8608.0,8608.0_BAD,42
+raw_conversations,868,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,2522,invalid_numeric,timestamp,2026-06-24 17:41:56,2026-06-24 17:41:56,42
+raw_conversations,30871,invalid_foreign_key,call_key,3789.0,3789.0_BAD,42
+raw_conversations,34905,duplicate,call_key,5144.0,ROW_DUPLICATED,42
+raw_conversations,1884,duplicate,timestamp,2026-03-28 19:54:48,ROW_DUPLICATED,42
+raw_conversations,7080,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,28552,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,34728,invalid_timestamp,timestamp,2026-02-09 10:25:29,NaT,42
+raw_conversations,12204,duplicate,call_key,1217.0,ROW_DUPLICATED,42
+raw_conversations,28131,missing_value,call_key,3270.0,nan,42
+raw_conversations,16045,invalid_numeric,confidence_score,0.172697857511363,0.172697857511363,42
+raw_conversations,11811,invalid_foreign_key,timestamp,2026-01-18 10:44:07,2026-01-18 10:44:07_BAD,42
+raw_conversations,22501,invalid_timestamp,confidence_score,0.8654688841069876,NaT,42
+raw_conversations,37203,duplicate,timestamp,2026-05-14 14:09:08,ROW_DUPLICATED,42
+raw_conversations,14537,invalid_timestamp,confidence_score,0.1518263808719758,NaT,42
+raw_conversations,4962,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,26981,invalid_numeric,confidence_score,0.8968057007349957,0.8968057007349957,42
+raw_conversations,4984,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,23772,missing_value,call_key,944.0,nan,42
+raw_conversations,9269,duplicate,call_key,4511.0,ROW_DUPLICATED,42
+raw_conversations,11772,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,22586,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,11215,invalid_timestamp,timestamp,2026-06-08 16:24:41,NaT,42
+raw_conversations,23507,invalid_foreign_key,timestamp,2026-05-07 13:18:30,2026-05-07 13:18:30_BAD,42
+raw_conversations,32101,invalid_numeric,call_key,4832.0,4832.0,42
+raw_conversations,27389,missing_value,confidence_score,0.313755742051545,nan,42
+raw_conversations,7145,invalid_foreign_key,confidence_score,0.9445582479970536,0.9445582479970536_BAD,42
+raw_conversations,10499,missing_value,call_key,4711.0,nan,42
+raw_conversations,17242,missing_value,timestamp,2026-05-09 19:26:34,nan,42
+raw_conversations,14251,duplicate,call_key,2196.0,ROW_DUPLICATED,42
+raw_conversations,5088,duplicate,call_key,7959.0,ROW_DUPLICATED,42
+raw_conversations,30412,missing_value,call_key,8324.0,nan,42
+raw_conversations,3035,invalid_foreign_key,confidence_score,0.1713713888455651,0.1713713888455651_BAD,42
+raw_conversations,30561,missing_value,timestamp,2026-03-01 11:28:55,nan,42
+raw_conversations,31259,missing_value,call_key,4914.0,nan,42
+raw_conversations,24211,missing_value,confidence_score,0.8370752061473573,nan,42
+raw_conversations,19838,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,8751,invalid_numeric,call_key,3346.0,3346.0,42
+raw_conversations,19859,invalid_numeric,timestamp,2026-02-25 16:53:29,2026-02-25 16:53:29,42
+raw_conversations,31978,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,6328,missing_value,timestamp,2026-05-29 15:05:22,nan,42
+raw_conversations,5582,invalid_timestamp,call_key,2848.0,NaT,42
+raw_conversations,14542,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,28226,missing_value,timestamp,2026-01-15 11:54:37,nan,42
+raw_conversations,26982,missing_value,confidence_score,nan,nan,42
+raw_conversations,31456,invalid_numeric,timestamp,2026-04-17 19:58:37,2026-04-17 19:58:37,42
+raw_conversations,1420,invalid_timestamp,call_key,9189.0,NaT,42
+raw_conversations,3962,duplicate,timestamp,2026-03-14 09:59:37,ROW_DUPLICATED,42
+raw_conversations,18574,missing_value,timestamp,2026-01-25 12:38:24,nan,42
+raw_conversations,2743,duplicate,confidence_score,0.8516295588780858,ROW_DUPLICATED,42
+raw_conversations,31729,invalid_timestamp,confidence_score,0.9304700458221844,NaT,42
+raw_conversations,6719,invalid_numeric,timestamp,2026-01-01 13:51:40,2026-01-01 13:51:40,42
+raw_conversations,9495,invalid_numeric,timestamp,2026-01-13 14:56:29,2026-01-13 14:56:29,42
+raw_conversations,27934,duplicate,timestamp,2026-02-26 15:16:20,ROW_DUPLICATED,42
+raw_conversations,13081,invalid_numeric,call_key,5566.0,5566.0,42
+raw_conversations,11367,invalid_foreign_key,confidence_score,0.4796478292539137,0.4796478292539137_BAD,42
+raw_conversations,362,invalid_foreign_key,timestamp,2026-03-17 08:44:54,2026-03-17 08:44:54_BAD,42
+raw_conversations,8451,invalid_timestamp,call_key,333.0,NaT,42
+raw_conversations,32043,invalid_foreign_key,timestamp,2026-06-01 16:16:17,2026-06-01 16:16:17_BAD,42
+raw_conversations,6537,missing_value,call_key,6451.0,nan,42
+raw_conversations,32050,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,31008,invalid_timestamp,timestamp,2026-03-08 19:01:56,NaT,42
+raw_conversations,11249,invalid_numeric,timestamp,2026-06-15 09:34:09,2026-06-15 09:34:09,42
+raw_conversations,26783,duplicate,confidence_score,0.5885475903399939,ROW_DUPLICATED,42
+raw_conversations,19962,missing_value,timestamp,2026-04-02 10:12:52,nan,42
+raw_conversations,18835,invalid_timestamp,call_key,9479.0,NaT,42
+raw_conversations,11499,invalid_foreign_key,confidence_score,0.9005538135516414,0.9005538135516414_BAD,42
+raw_conversations,6971,missing_value,confidence_score,0.7146740970267345,nan,42
+raw_conversations,16537,invalid_numeric,timestamp,2026-06-21 08:52:48,2026-06-21 08:52:48,42
+raw_conversations,7985,invalid_foreign_key,call_key,226.0,226.0_BAD,42
+raw_conversations,1019,invalid_timestamp,timestamp,2026-02-23 12:13:46,NaT,42
+raw_conversations,17935,invalid_foreign_key,call_key,3398.0,3398.0_BAD,42
+raw_conversations,3720,missing_value,confidence_score,nan,nan,42
+raw_conversations,16577,invalid_timestamp,call_key,5007.0,NaT,42
+raw_conversations,21706,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,27961,duplicate,confidence_score,0.8037776931613991,ROW_DUPLICATED,42
+raw_conversations,33982,invalid_numeric,call_key,5629.0,5629.0,42
+raw_conversations,13101,invalid_timestamp,timestamp,2026-05-17 18:35:12,NaT,42
+raw_conversations,32522,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,32585,duplicate,timestamp,2026-01-07 14:27:11,ROW_DUPLICATED,42
+raw_conversations,6342,invalid_timestamp,timestamp,2026-05-28 18:47:20,NaT,42
+raw_conversations,1081,invalid_timestamp,confidence_score,0.3730262558357479,NaT,42
+raw_conversations,9698,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,32433,duplicate,timestamp,2026-03-09 16:50:24,ROW_DUPLICATED,42
+raw_conversations,33674,missing_value,call_key,5348.0,nan,42
+raw_conversations,17746,missing_value,call_key,93.0,nan,42
+raw_conversations,32400,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,33189,invalid_timestamp,timestamp,2026-01-06 15:21:44,NaT,42
+raw_conversations,449,missing_value,call_key,9788.0,nan,42
+raw_conversations,28796,invalid_timestamp,timestamp,2026-03-23 16:43:36,NaT,42
+raw_conversations,18697,invalid_timestamp,call_key,9086.0,NaT,42
+raw_conversations,12382,duplicate,timestamp,2026-01-25 13:57:07,ROW_DUPLICATED,42
+raw_conversations,25300,duplicate,timestamp,2026-06-23 12:07:29,ROW_DUPLICATED,42
+raw_conversations,19151,missing_value,call_key,3845.0,nan,42
+raw_conversations,16699,duplicate,timestamp,2026-04-03 15:57:58,ROW_DUPLICATED,42
+raw_conversations,3300,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,21988,invalid_foreign_key,timestamp,2026-01-01 19:13:00,2026-01-01 19:13:00_BAD,42
+raw_conversations,15914,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,29037,missing_value,confidence_score,0.3027614823537066,nan,42
+raw_conversations,6009,duplicate,timestamp,2026-03-25 10:58:25,ROW_DUPLICATED,42
+raw_conversations,22235,invalid_timestamp,confidence_score,0.275269176731691,NaT,42
+raw_conversations,16043,invalid_timestamp,call_key,7884.0,NaT,42
+raw_conversations,7814,duplicate,timestamp,2026-05-11 12:18:42,ROW_DUPLICATED,42
+raw_conversations,9523,invalid_timestamp,call_key,1910.0,NaT,42
+raw_conversations,36404,invalid_timestamp,timestamp,2026-04-26 08:13:44,NaT,42
+raw_conversations,38963,missing_value,timestamp,2026-04-22 17:20:53,nan,42
+raw_conversations,39411,missing_value,call_key,9730.0,nan,42
+raw_conversations,27102,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,24967,invalid_numeric,confidence_score,0.6657816126791258,0.6657816126791258,42
+raw_conversations,27998,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,7490,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,5984,duplicate,call_key,8672.0,ROW_DUPLICATED,42
+raw_conversations,14282,missing_value,confidence_score,nan,nan,42
+raw_conversations,18810,invalid_foreign_key,call_key,2908.0,2908.0_BAD,42
+raw_conversations,30378,invalid_numeric,timestamp,2026-02-24 12:52:29,2026-02-24 12:52:29,42
+raw_conversations,37006,invalid_timestamp,timestamp,2026-06-12 12:03:28,NaT,42
+raw_conversations,6061,invalid_numeric,confidence_score,0.3951213836416858,0.3951213836416858,42
+raw_conversations,8524,invalid_foreign_key,timestamp,2026-05-28 19:34:10,2026-05-28 19:34:10_BAD,42
+raw_conversations,37082,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,33529,invalid_numeric,timestamp,2026-04-13 11:05:16,2026-04-13 11:05:16,42
+raw_conversations,29035,duplicate,timestamp,2026-01-01 18:33:12,ROW_DUPLICATED,42
+raw_conversations,24905,invalid_foreign_key,confidence_score,0.8794100956432865,0.8794100956432865_BAD,42
+raw_conversations,10195,missing_value,timestamp,2026-05-09 19:03:05,nan,42
+raw_conversations,391,missing_value,call_key,9953.0,nan,42
+raw_conversations,18824,invalid_timestamp,call_key,3679.0,NaT,42
+raw_conversations,21014,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,5180,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,39493,invalid_timestamp,call_key,7325.0,NaT,42
+raw_conversations,23490,missing_value,timestamp,2026-06-01 17:27:39,nan,42
+raw_conversations,15707,duplicate,timestamp,2026-05-15 15:41:03,ROW_DUPLICATED,42
+raw_conversations,21262,missing_value,confidence_score,nan,nan,42
+raw_conversations,1875,duplicate,call_key,6553.0,ROW_DUPLICATED,42
+raw_conversations,9822,invalid_foreign_key,timestamp,2026-06-12 16:21:56,2026-06-12 16:21:56_BAD,42
+raw_conversations,15084,invalid_timestamp,call_key,9937.0,NaT,42
+raw_conversations,6542,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,21987,invalid_numeric,confidence_score,0.5011572593905823,0.5011572593905823,42
+raw_conversations,14807,missing_value,call_key,2005.0,nan,42
+raw_conversations,3092,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,2891,missing_value,timestamp,2026-02-11 15:52:05,nan,42
+raw_conversations,33004,invalid_foreign_key,call_key,6975.0,6975.0_BAD,42
+raw_conversations,12098,invalid_foreign_key,call_key,5596.0,5596.0_BAD,42
+raw_conversations,26028,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,29132,missing_value,timestamp,2026-01-11 08:13:19,nan,42
+raw_conversations,37272,invalid_foreign_key,timestamp,2026-02-10 18:33:02,2026-02-10 18:33:02_BAD,42
+raw_conversations,29353,duplicate,call_key,523.0,ROW_DUPLICATED,42
+raw_conversations,23652,missing_value,call_key,2934.0,nan,42
+raw_conversations,17686,duplicate,timestamp,2026-02-02 10:13:52,ROW_DUPLICATED,42
+raw_conversations,32670,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,31048,invalid_timestamp,timestamp,2026-03-28 08:37:42,NaT,42
+raw_conversations,18089,invalid_numeric,call_key,7411.0,7411.0,42
+raw_conversations,29780,duplicate,call_key,2699.0,ROW_DUPLICATED,42
+raw_conversations,26500,invalid_foreign_key,timestamp,2026-02-02 13:14:47,2026-02-02 13:14:47_BAD,42
+raw_conversations,4107,missing_value,confidence_score,0.7911770697540058,nan,42
+raw_conversations,4634,invalid_timestamp,timestamp,2026-05-16 19:40:07,NaT,42
+raw_conversations,22437,invalid_numeric,confidence_score,0.7070918025267677,0.7070918025267677,42
+raw_conversations,8963,invalid_timestamp,call_key,4173.0,NaT,42
+raw_conversations,35417,duplicate,call_key,6689.0,ROW_DUPLICATED,42
+raw_conversations,13634,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,33318,duplicate,timestamp,2026-03-27 18:20:55,ROW_DUPLICATED,42
+raw_conversations,39657,invalid_timestamp,confidence_score,0.3776707924137288,NaT,42
+raw_conversations,6528,missing_value,timestamp,2026-01-05 12:26:36,nan,42
+raw_conversations,22825,invalid_timestamp,call_key,3045.0,NaT,42
+raw_conversations,13265,duplicate,timestamp,2026-01-30 18:19:12,ROW_DUPLICATED,42
+raw_conversations,4176,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,34232,invalid_numeric,timestamp,2026-03-17 13:10:27,2026-03-17 13:10:27,42
+raw_conversations,38357,invalid_numeric,timestamp,2026-03-12 14:02:17,2026-03-12 14:02:17,42
+raw_conversations,20067,invalid_foreign_key,confidence_score,0.5271583329726238,0.5271583329726238_BAD,42
+raw_conversations,10693,duplicate,call_key,2489.0,ROW_DUPLICATED,42
+raw_conversations,7038,invalid_timestamp,timestamp,2026-06-01 19:21:54,NaT,42
+raw_conversations,19018,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,38631,invalid_foreign_key,timestamp,2026-01-30 09:38:47,2026-01-30 09:38:47_BAD,42
+raw_conversations,16550,invalid_foreign_key,timestamp,2026-03-07 16:28:52,2026-03-07 16:28:52_BAD,42
+raw_conversations,25027,missing_value,timestamp,2026-02-12 12:00:34,nan,42
+raw_conversations,5421,invalid_numeric,call_key,1615.0,1615.0,42
+raw_conversations,21082,missing_value,call_key,8567.0,nan,42
+raw_conversations,18301,missing_value,call_key,7671.0,nan,42
+raw_conversations,21808,missing_value,confidence_score,nan,nan,42
+raw_conversations,35146,duplicate,call_key,8316.0,ROW_DUPLICATED,42
+raw_conversations,19235,missing_value,timestamp,2026-01-30 15:40:20,nan,42
+raw_conversations,18075,missing_value,timestamp,2026-03-02 09:26:55,nan,42
+raw_conversations,20557,missing_value,confidence_score,0.9154761803545832,nan,42
+raw_conversations,29947,duplicate,timestamp,2026-01-06 15:58:04,ROW_DUPLICATED,42
+raw_conversations,26527,duplicate,call_key,9229.0,ROW_DUPLICATED,42
+raw_conversations,3542,duplicate,timestamp,2026-06-20 14:31:13,ROW_DUPLICATED,42
+raw_conversations,2582,invalid_foreign_key,timestamp,2026-01-25 13:21:36,2026-01-25 13:21:36_BAD,42
+raw_conversations,16862,invalid_timestamp,call_key,2807.0,NaT,42
+raw_conversations,5704,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,11862,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,35574,invalid_foreign_key,timestamp,2026-04-29 12:40:20,2026-04-29 12:40:20_BAD,42
+raw_conversations,27755,invalid_foreign_key,timestamp,2026-06-20 15:14:12,2026-06-20 15:14:12_BAD,42
+raw_conversations,13010,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,6901,duplicate,call_key,3973.0,ROW_DUPLICATED,42
+raw_conversations,15846,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,1736,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,1734,missing_value,timestamp,2026-04-02 17:23:07,nan,42
+raw_conversations,19839,invalid_timestamp,call_key,3413.0,NaT,42
+raw_conversations,10906,invalid_foreign_key,call_key,12.0,12.0_BAD,42
+raw_conversations,26781,duplicate,timestamp,2026-01-16 09:41:23,ROW_DUPLICATED,42
+raw_conversations,21770,invalid_timestamp,call_key,1476.0,NaT,42
+raw_conversations,38580,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,11892,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,30003,duplicate,timestamp,2026-06-21 16:30:15,ROW_DUPLICATED,42
+raw_conversations,17055,invalid_timestamp,confidence_score,0.7183368491753551,NaT,42
+raw_conversations,33430,missing_value,call_key,6944.0,nan,42
+raw_conversations,12025,duplicate,confidence_score,0.2002336140068839,ROW_DUPLICATED,42
+raw_conversations,5540,missing_value,call_key,4734.0,nan,42
+raw_conversations,34664,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,13581,invalid_foreign_key,confidence_score,0.6024820035078629,0.6024820035078629_BAD,42
+raw_conversations,24574,missing_value,confidence_score,nan,nan,42
+raw_conversations,34085,invalid_foreign_key,confidence_score,0.8703587918394792,0.8703587918394792_BAD,42
+raw_conversations,32289,missing_value,call_key,1098.0,nan,42
+raw_conversations,15749,duplicate,confidence_score,0.8182759512809142,ROW_DUPLICATED,42
+raw_conversations,12226,invalid_timestamp,timestamp,2026-05-17 11:27:30,NaT,42
+raw_conversations,21610,missing_value,confidence_score,nan,nan,42
+raw_conversations,14279,missing_value,timestamp,2026-01-31 12:16:16,nan,42
+raw_conversations,14588,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,25896,duplicate,call_key,5650.0,ROW_DUPLICATED,42
+raw_conversations,25784,missing_value,timestamp,2026-03-24 17:11:22,nan,42
+raw_conversations,16528,missing_value,timestamp,2026-01-18 19:39:43,nan,42
+raw_conversations,3858,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,24148,missing_value,timestamp,2026-04-23 11:40:30,nan,42
+raw_conversations,4918,duplicate,call_key,8562.0,ROW_DUPLICATED,42
+raw_conversations,29585,missing_value,timestamp,2026-02-02 14:17:56,nan,42
+raw_conversations,11120,invalid_numeric,timestamp,2026-03-17 16:47:39,2026-03-17 16:47:39,42
+raw_conversations,698,duplicate,timestamp,2026-01-08 08:24:11,ROW_DUPLICATED,42
+raw_conversations,6369,invalid_foreign_key,call_key,6946.0,6946.0_BAD,42
+raw_conversations,2398,missing_value,confidence_score,nan,nan,42
+raw_conversations,29841,invalid_numeric,confidence_score,0.7093138628543421,0.7093138628543421,42
+raw_conversations,4497,missing_value,call_key,3669.0,nan,42
+raw_conversations,20290,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,1870,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,38657,invalid_timestamp,confidence_score,0.9332186682326592,NaT,42
+raw_conversations,11594,duplicate,call_key,3389.0,ROW_DUPLICATED,42
+raw_conversations,3429,invalid_numeric,confidence_score,0.7309255053159086,0.7309255053159086,42
+raw_conversations,16883,invalid_numeric,call_key,496.0,496.0,42
+raw_conversations,25076,missing_value,call_key,7320.0,nan,42
+raw_conversations,17954,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,38967,duplicate,confidence_score,0.9264721685950632,ROW_DUPLICATED,42
+raw_conversations,14719,missing_value,timestamp,2026-05-15 16:04:09,nan,42
+raw_conversations,23855,invalid_numeric,timestamp,2026-06-28 11:03:14,2026-06-28 11:03:14,42
+raw_conversations,17233,duplicate,confidence_score,0.7914910697857758,ROW_DUPLICATED,42
+raw_conversations,19792,invalid_timestamp,timestamp,2026-04-09 14:02:58,NaT,42
+raw_conversations,38200,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,14103,duplicate,timestamp,2026-03-24 18:23:28,ROW_DUPLICATED,42
+raw_conversations,29911,invalid_foreign_key,confidence_score,0.3458925572298638,0.3458925572298638_BAD,42
+raw_conversations,33956,duplicate,timestamp,2026-02-08 13:17:19,ROW_DUPLICATED,42
+raw_conversations,35841,missing_value,call_key,2972.0,nan,42
+raw_conversations,25207,invalid_numeric,call_key,3224.0,3224.0,42
+raw_conversations,23879,missing_value,timestamp,2026-02-12 16:17:34,nan,42
+raw_conversations,9092,missing_value,timestamp,2026-02-15 12:04:29,nan,42
+raw_conversations,17074,missing_value,call_key,1099.0,nan,42
+raw_conversations,2052,invalid_numeric,timestamp,2026-03-16 16:15:01,2026-03-16 16:15:01,42
+raw_conversations,15688,invalid_numeric,call_key,2748.0,2748.0,42
+raw_conversations,7106,missing_value,confidence_score,nan,nan,42
+raw_conversations,32053,duplicate,call_key,3394.0,ROW_DUPLICATED,42
+raw_conversations,11020,invalid_foreign_key,call_key,4382.0,4382.0_BAD,42
+raw_conversations,27133,missing_value,timestamp,2026-03-01 08:57:42,nan,42
+raw_conversations,10403,missing_value,confidence_score,0.554269674353554,nan,42
+raw_conversations,10682,duplicate,call_key,7133.0,ROW_DUPLICATED,42
+raw_conversations,22024,invalid_timestamp,timestamp,2026-03-13 08:49:45,NaT,42
+raw_conversations,6517,invalid_foreign_key,call_key,6926.0,6926.0_BAD,42
+raw_conversations,38583,invalid_timestamp,confidence_score,0.9550899927781796,NaT,42
+raw_conversations,11683,duplicate,timestamp,2026-05-17 16:10:47,ROW_DUPLICATED,42
+raw_conversations,7832,invalid_foreign_key,timestamp,2026-01-07 18:53:04,2026-01-07 18:53:04_BAD,42
+raw_conversations,32409,missing_value,call_key,7806.0,nan,42
+raw_conversations,126,invalid_timestamp,call_key,7851.0,NaT,42
+raw_conversations,39732,invalid_timestamp,call_key,9514.0,NaT,42
+raw_conversations,37033,invalid_timestamp,timestamp,2026-04-23 08:47:00,NaT,42
+raw_conversations,30902,invalid_foreign_key,timestamp,2026-01-26 15:13:41,2026-01-26 15:13:41_BAD,42
+raw_conversations,24184,invalid_foreign_key,call_key,156.0,156.0_BAD,42
+raw_conversations,1238,invalid_foreign_key,call_key,3940.0,3940.0_BAD,42
+raw_conversations,27533,duplicate,confidence_score,0.286280564504882,ROW_DUPLICATED,42
+raw_conversations,20420,missing_value,call_key,8618.0,nan,42
+raw_conversations,32072,duplicate,call_key,7765.0,ROW_DUPLICATED,42
+raw_conversations,26829,invalid_timestamp,call_key,7548.0,NaT,42
+raw_conversations,19637,invalid_timestamp,timestamp,2026-04-25 08:45:28,NaT,42
+raw_conversations,2147,missing_value,confidence_score,0.5898910627039772,nan,42
+raw_conversations,26042,invalid_foreign_key,timestamp,2026-02-09 15:25:25,2026-02-09 15:25:25_BAD,42
+raw_conversations,34268,invalid_numeric,call_key,9484.0,9484.0,42
+raw_conversations,27398,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,30322,missing_value,confidence_score,nan,nan,42
+raw_conversations,26096,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,8741,missing_value,timestamp,2026-01-31 10:37:08,nan,42
+raw_conversations,28635,invalid_foreign_key,call_key,9049.0,9049.0_BAD,42
+raw_conversations,8057,invalid_foreign_key,confidence_score,0.636436869044652,0.636436869044652_BAD,42
+raw_conversations,38305,invalid_numeric,confidence_score,0.2041795119057362,0.2041795119057362,42
+raw_conversations,34238,invalid_numeric,timestamp,2026-02-11 09:31:09,2026-02-11 09:31:09,42
+raw_conversations,12536,invalid_foreign_key,call_key,2975.0,2975.0_BAD,42
+raw_conversations,39244,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,24928,missing_value,confidence_score,nan,nan,42
+raw_conversations,12561,invalid_timestamp,confidence_score,0.9734091979732524,NaT,42
+raw_conversations,31154,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,6100,missing_value,confidence_score,nan,nan,42
+raw_conversations,26222,missing_value,confidence_score,nan,nan,42
+raw_conversations,12910,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,34825,invalid_timestamp,call_key,6218.0,NaT,42
+raw_conversations,36593,duplicate,timestamp,2026-06-29 17:33:33,ROW_DUPLICATED,42
+raw_conversations,10376,missing_value,confidence_score,nan,nan,42
+raw_conversations,4999,duplicate,call_key,9786.0,ROW_DUPLICATED,42
+raw_conversations,24001,invalid_timestamp,timestamp,2026-04-09 10:29:50,NaT,42
+raw_conversations,29337,invalid_foreign_key,call_key,2777.0,2777.0_BAD,42
+raw_conversations,13631,invalid_numeric,timestamp,2026-02-11 13:13:09,2026-02-11 13:13:09,42
+raw_conversations,35365,invalid_timestamp,confidence_score,0.5686269268619669,NaT,42
+raw_conversations,2623,invalid_numeric,call_key,3510.0,3510.0,42
+raw_conversations,3386,missing_value,call_key,5618.0,nan,42
+raw_conversations,38152,invalid_foreign_key,call_key,4041.0,4041.0_BAD,42
+raw_conversations,25585,duplicate,confidence_score,0.469419896217614,ROW_DUPLICATED,42
+raw_conversations,9475,missing_value,call_key,8918.0,nan,42
+raw_conversations,24121,duplicate,confidence_score,0.2568116604077996,ROW_DUPLICATED,42
+raw_conversations,20029,missing_value,call_key,3516.0,nan,42
+raw_conversations,27816,invalid_foreign_key,call_key,8059.0,8059.0_BAD,42
+raw_conversations,15122,missing_value,call_key,1696.0,nan,42
+raw_conversations,19009,duplicate,call_key,9472.0,ROW_DUPLICATED,42
+raw_conversations,37361,duplicate,timestamp,2026-02-28 14:34:34,ROW_DUPLICATED,42
+raw_conversations,19928,invalid_numeric,call_key,5379.0,5379.0,42
+raw_conversations,415,duplicate,timestamp,2026-04-30 16:52:09,ROW_DUPLICATED,42
+raw_conversations,12897,missing_value,timestamp,2026-05-27 12:20:10,nan,42
+raw_conversations,15661,invalid_numeric,timestamp,2026-01-04 11:37:06,2026-01-04 11:37:06,42
+raw_conversations,37713,invalid_numeric,call_key,1930.0,1930.0,42
+raw_conversations,3566,duplicate,timestamp,2026-06-23 16:11:29,ROW_DUPLICATED,42
+raw_conversations,33609,invalid_timestamp,confidence_score,0.9618411183491232,NaT,42
+raw_conversations,36798,missing_value,confidence_score,nan,nan,42
+raw_conversations,4027,duplicate,call_key,9862.0,ROW_DUPLICATED,42
+raw_conversations,13219,invalid_numeric,call_key,6375.0,6375.0,42
+raw_conversations,21323,invalid_timestamp,call_key,6879.0,NaT,42
+raw_conversations,34609,duplicate,timestamp,2026-03-23 14:46:25,ROW_DUPLICATED,42
+raw_conversations,3797,invalid_foreign_key,call_key,1170.0,1170.0_BAD,42
+raw_conversations,1688,invalid_timestamp,timestamp,2026-03-18 09:09:02,NaT,42
+raw_conversations,24911,invalid_timestamp,confidence_score,0.8657752028016652,NaT,42
+raw_conversations,11666,invalid_numeric,timestamp,2026-06-09 19:12:33,2026-06-09 19:12:33,42
+raw_conversations,3237,duplicate,timestamp,2026-03-24 11:35:15,ROW_DUPLICATED,42
+raw_conversations,14346,duplicate,call_key,6793.0,ROW_DUPLICATED,42
+raw_conversations,31722,missing_value,call_key,7352.0,nan,42
+raw_conversations,5599,duplicate,call_key,5999.0,ROW_DUPLICATED,42
+raw_conversations,10058,missing_value,confidence_score,nan,nan,42
+raw_conversations,15845,duplicate,timestamp,2026-01-15 09:32:09,ROW_DUPLICATED,42
+raw_conversations,14117,missing_value,timestamp,2026-03-13 19:31:08,nan,42
+raw_conversations,20817,missing_value,timestamp,2026-04-19 15:48:12,nan,42
+raw_conversations,39143,invalid_numeric,timestamp,2026-03-18 13:31:39,2026-03-18 13:31:39,42
+raw_conversations,13069,duplicate,confidence_score,0.8484359889743335,ROW_DUPLICATED,42
+raw_conversations,15431,missing_value,confidence_score,0.7062882726200239,nan,42
+raw_conversations,32761,invalid_numeric,timestamp,2026-04-11 12:29:15,2026-04-11 12:29:15,42
+raw_conversations,1703,invalid_foreign_key,confidence_score,0.9488355458438416,0.9488355458438416_BAD,42
+raw_conversations,37218,duplicate,timestamp,2026-04-20 14:20:16,ROW_DUPLICATED,42
+raw_conversations,26649,invalid_foreign_key,confidence_score,0.5640976769757329,0.5640976769757329_BAD,42
+raw_conversations,21514,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,9567,missing_value,timestamp,2026-05-12 13:41:04,nan,42
+raw_conversations,14682,missing_value,timestamp,2026-01-31 14:50:56,nan,42
+raw_conversations,35343,missing_value,confidence_score,0.4926745219359855,nan,42
+raw_conversations,28810,duplicate,timestamp,2026-02-19 10:47:08,ROW_DUPLICATED,42
+raw_conversations,32134,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,39582,missing_value,call_key,1719.0,nan,42
+raw_conversations,16684,invalid_timestamp,timestamp,2026-04-19 14:32:31,NaT,42
+raw_conversations,16631,invalid_numeric,confidence_score,0.8046130926309207,0.8046130926309207,42
+raw_conversations,36114,invalid_numeric,call_key,7254.0,7254.0,42
+raw_conversations,39414,invalid_numeric,call_key,7717.0,7717.0,42
+raw_conversations,10479,missing_value,timestamp,2026-06-07 08:24:45,nan,42
+raw_conversations,24444,invalid_numeric,timestamp,2026-01-14 12:43:13,2026-01-14 12:43:13,42
+raw_conversations,26881,duplicate,timestamp,2026-06-15 10:07:27,ROW_DUPLICATED,42
+raw_conversations,30194,missing_value,timestamp,2026-01-06 12:07:42,nan,42
+raw_conversations,39263,invalid_foreign_key,timestamp,2026-01-23 08:56:32,2026-01-23 08:56:32_BAD,42
+raw_conversations,36575,duplicate,timestamp,2026-03-03 08:03:53,ROW_DUPLICATED,42
+raw_conversations,1033,invalid_numeric,confidence_score,0.1269596343300509,0.1269596343300509,42
+raw_conversations,31059,duplicate,confidence_score,0.6346751167916442,ROW_DUPLICATED,42
+raw_conversations,406,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,22741,duplicate,call_key,5111.0,ROW_DUPLICATED,42
+raw_conversations,2526,invalid_timestamp,call_key,1736.0,NaT,42
+raw_conversations,25575,missing_value,confidence_score,0.0943335362760083,nan,42
+raw_conversations,18018,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,6216,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,21170,invalid_timestamp,timestamp,2026-03-24 09:30:42,NaT,42
+raw_conversations,38421,invalid_timestamp,call_key,1103.0,NaT,42
+raw_conversations,22071,missing_value,call_key,7405.0,nan,42
+raw_conversations,31492,duplicate,timestamp,2026-03-14 19:04:17,ROW_DUPLICATED,42
+raw_conversations,19769,duplicate,call_key,9330.0,ROW_DUPLICATED,42
+raw_conversations,31277,missing_value,call_key,2515.0,nan,42
+raw_conversations,13802,duplicate,call_key,5402.0,ROW_DUPLICATED,42
+raw_conversations,11557,invalid_numeric,call_key,734.0,734.0,42
+raw_conversations,18524,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,3065,invalid_numeric,call_key,3043.0,3043.0,42
+raw_conversations,5330,missing_value,timestamp,2026-02-15 14:52:40,nan,42
+raw_conversations,20112,missing_value,call_key,1959.0,nan,42
+raw_conversations,17544,duplicate,call_key,3283.0,ROW_DUPLICATED,42
+raw_conversations,5700,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,33134,invalid_numeric,timestamp,2026-04-19 10:28:23,2026-04-19 10:28:23,42
+raw_conversations,25955,missing_value,timestamp,2026-03-10 12:47:34,nan,42
+raw_conversations,8056,missing_value,confidence_score,nan,nan,42
+raw_conversations,3278,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,971,duplicate,call_key,881.0,ROW_DUPLICATED,42
+raw_conversations,12660,invalid_timestamp,call_key,4803.0,NaT,42
+raw_conversations,28839,missing_value,timestamp,2026-02-14 13:22:01,nan,42
+raw_conversations,15246,missing_value,call_key,7971.0,nan,42
+raw_conversations,10498,missing_value,timestamp,2026-05-17 15:40:56,nan,42
+raw_conversations,3025,invalid_foreign_key,confidence_score,0.9137724863569636,0.9137724863569636_BAD,42
+raw_conversations,3328,invalid_numeric,call_key,4597.0,4597.0,42
+raw_conversations,11302,missing_value,call_key,4704.0,nan,42
+raw_conversations,38449,duplicate,confidence_score,0.7307616452858652,ROW_DUPLICATED,42
+raw_conversations,3555,invalid_foreign_key,call_key,3473.0,3473.0_BAD,42
+raw_conversations,13040,invalid_foreign_key,timestamp,2026-02-13 15:30:59,2026-02-13 15:30:59_BAD,42
+raw_conversations,36212,missing_value,call_key,25.0,nan,42
+raw_conversations,4704,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,3201,duplicate,confidence_score,0.8113077485259316,ROW_DUPLICATED,42
+raw_conversations,18819,invalid_numeric,call_key,987.0,987.0,42
+raw_conversations,37890,duplicate,timestamp,2026-04-15 19:57:07,ROW_DUPLICATED,42
+raw_conversations,11661,duplicate,call_key,638.0,ROW_DUPLICATED,42
+raw_conversations,15743,invalid_numeric,confidence_score,0.8268444176864275,0.8268444176864275,42
+raw_conversations,26541,duplicate,call_key,8478.0,ROW_DUPLICATED,42
+raw_conversations,3926,missing_value,confidence_score,nan,nan,42
+raw_conversations,16246,missing_value,call_key,1687.0,nan,42
+raw_conversations,12209,invalid_timestamp,timestamp,2026-05-25 12:59:35,NaT,42
+raw_conversations,27787,missing_value,call_key,6741.0,nan,42
+raw_conversations,9682,duplicate,call_key,4219.0,ROW_DUPLICATED,42
+raw_conversations,34507,missing_value,confidence_score,0.3218787916752909,nan,42
+raw_conversations,22938,invalid_timestamp,call_key,7675.0,NaT,42
+raw_conversations,26478,missing_value,confidence_score,nan,nan,42
+raw_conversations,21502,missing_value,confidence_score,nan,nan,42
+raw_conversations,30634,invalid_foreign_key,timestamp,2026-06-06 17:53:48,2026-06-06 17:53:48_BAD,42
+raw_conversations,10508,missing_value,confidence_score,nan,nan,42
+raw_conversations,35155,invalid_foreign_key,confidence_score,0.6414350571435307,0.6414350571435307_BAD,42
+raw_conversations,31086,missing_value,call_key,2984.0,nan,42
+raw_conversations,2566,invalid_numeric,call_key,9460.0,9460.0,42
+raw_conversations,33227,invalid_timestamp,call_key,8704.0,NaT,42
+raw_conversations,19790,invalid_foreign_key,call_key,434.0,434.0_BAD,42
+raw_conversations,21152,invalid_timestamp,timestamp,2026-02-07 09:41:04,NaT,42
+raw_conversations,37304,missing_value,timestamp,2026-01-21 10:01:25,nan,42
+raw_conversations,930,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,27209,missing_value,timestamp,2026-05-20 17:34:52,nan,42
+raw_conversations,36569,invalid_numeric,call_key,4209.0,4209.0,42
+raw_conversations,17836,invalid_foreign_key,timestamp,2026-03-11 15:00:46,2026-03-11 15:00:46_BAD,42
+raw_conversations,39333,invalid_numeric,call_key,3897.0,3897.0,42
+raw_conversations,23020,invalid_timestamp,call_key,4153.0,NaT,42
+raw_conversations,16051,invalid_foreign_key,confidence_score,0.5256639390049023,0.5256639390049023_BAD,42
+raw_conversations,23542,duplicate,call_key,3862.0,ROW_DUPLICATED,42
+raw_conversations,35646,missing_value,confidence_score,nan,nan,42
+raw_conversations,39680,missing_value,call_key,8181.0,nan,42
+raw_conversations,899,missing_value,call_key,1024.0,nan,42
+raw_conversations,4378,missing_value,timestamp,2026-02-05 16:29:45,nan,42
+raw_conversations,21277,missing_value,confidence_score,0.8159900121038992,nan,42
+raw_conversations,3010,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,5881,invalid_foreign_key,confidence_score,0.3227201824373785,0.3227201824373785_BAD,42
+raw_conversations,38301,missing_value,confidence_score,0.6011250330153047,nan,42
+raw_conversations,23539,invalid_numeric,call_key,3862.0,3862.0,42
+raw_conversations,18342,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,39275,invalid_foreign_key,call_key,748.0,748.0_BAD,42
+raw_conversations,8598,missing_value,confidence_score,nan,nan,42
+raw_conversations,9294,missing_value,confidence_score,nan,nan,42
+raw_conversations,25740,invalid_foreign_key,call_key,7130.0,7130.0_BAD,42
+raw_conversations,33633,duplicate,confidence_score,0.4373962522352649,ROW_DUPLICATED,42
+raw_conversations,5219,invalid_foreign_key,confidence_score,0.8884729667637482,0.8884729667637482_BAD,42
+raw_conversations,4083,duplicate,call_key,3752.0,ROW_DUPLICATED,42
+raw_conversations,36285,duplicate,timestamp,2026-03-09 12:33:07,ROW_DUPLICATED,42
+raw_conversations,28567,invalid_foreign_key,confidence_score,0.9386998049229398,0.9386998049229398_BAD,42
+raw_conversations,23,missing_value,call_key,1886.0,nan,42
+raw_conversations,11802,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,18040,invalid_foreign_key,call_key,1695.0,1695.0_BAD,42
+raw_conversations,19096,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,19240,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,8381,missing_value,timestamp,2026-03-31 17:05:16,nan,42
+raw_conversations,18416,missing_value,timestamp,2026-04-01 19:11:34,nan,42
+raw_conversations,7356,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,33361,missing_value,call_key,1391.0,nan,42
+raw_conversations,16351,invalid_numeric,timestamp,2026-01-14 19:06:56,2026-01-14 19:06:56,42
+raw_conversations,31724,duplicate,call_key,7352.0,ROW_DUPLICATED,42
+raw_conversations,5454,invalid_numeric,call_key,7231.0,7231.0,42
+raw_conversations,13865,duplicate,confidence_score,0.862113537460908,ROW_DUPLICATED,42
+raw_conversations,16629,missing_value,call_key,3017.0,nan,42
+raw_conversations,36418,invalid_numeric,call_key,6130.0,6130.0,42
+raw_conversations,38812,missing_value,confidence_score,nan,nan,42
+raw_conversations,23250,duplicate,timestamp,2026-01-06 08:47:35,ROW_DUPLICATED,42
+raw_conversations,8397,invalid_timestamp,timestamp,2026-03-01 19:30:57,NaT,42
+raw_conversations,1470,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,23329,missing_value,timestamp,2026-03-18 08:05:27,nan,42
+raw_conversations,18551,missing_value,call_key,8756.0,nan,42
+raw_conversations,27029,duplicate,confidence_score,0.3933194916510025,ROW_DUPLICATED,42
+raw_conversations,22143,invalid_foreign_key,confidence_score,0.8949743979170554,0.8949743979170554_BAD,42
+raw_conversations,12436,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,18152,invalid_foreign_key,call_key,3068.0,3068.0_BAD,42
+raw_conversations,21735,invalid_timestamp,confidence_score,0.2254464024933639,NaT,42
+raw_conversations,17778,missing_value,timestamp,2026-05-29 11:20:47,nan,42
+raw_conversations,27994,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,501,invalid_foreign_key,call_key,3124.0,3124.0_BAD,42
+raw_conversations,34796,invalid_timestamp,call_key,9418.0,NaT,42
+raw_conversations,22734,invalid_timestamp,call_key,6119.0,NaT,42
+raw_conversations,24451,missing_value,confidence_score,0.4775508363878018,nan,42
+raw_conversations,29880,invalid_numeric,timestamp,2026-04-03 16:33:46,2026-04-03 16:33:46,42
+raw_conversations,18655,invalid_numeric,confidence_score,0.8023445732636089,0.8023445732636089,42
+raw_conversations,11004,missing_value,call_key,9890.0,nan,42
+raw_conversations,22370,invalid_numeric,call_key,1457.0,1457.0,42
+raw_conversations,16518,duplicate,call_key,1568.0,ROW_DUPLICATED,42
+raw_conversations,35167,invalid_numeric,timestamp,2026-06-09 16:02:19,2026-06-09 16:02:19,42
+raw_conversations,17140,invalid_timestamp,call_key,7053.0,NaT,42
+raw_conversations,8403,duplicate,confidence_score,0.7225117790470204,ROW_DUPLICATED,42
+raw_conversations,31944,missing_value,confidence_score,nan,nan,42
+raw_conversations,31932,invalid_timestamp,call_key,5837.0,NaT,42
+raw_conversations,26567,missing_value,timestamp,2026-06-23 19:56:30,nan,42
+raw_conversations,28861,missing_value,call_key,6018.0,nan,42
+raw_conversations,11885,missing_value,timestamp,2026-01-16 15:32:47,nan,42
+raw_conversations,24995,invalid_timestamp,confidence_score,0.7527837951637347,NaT,42
+raw_conversations,10546,invalid_numeric,call_key,8561.0,8561.0,42
+raw_conversations,32771,duplicate,confidence_score,0.2996620930846184,ROW_DUPLICATED,42
+raw_conversations,17072,duplicate,timestamp,2026-01-27 14:29:49,ROW_DUPLICATED,42
+raw_conversations,24555,missing_value,call_key,9716.0,nan,42
+raw_conversations,13798,missing_value,call_key,6597.0,nan,42
+raw_conversations,983,duplicate,call_key,33.0,ROW_DUPLICATED,42
+raw_conversations,435,invalid_numeric,call_key,6717.0,6717.0,42
+raw_conversations,15782,missing_value,timestamp,2026-01-06 13:21:59,nan,42
+raw_conversations,30746,invalid_numeric,timestamp,2026-06-20 09:50:58,2026-06-20 09:50:58,42
+raw_conversations,16185,duplicate,timestamp,2026-06-21 17:30:57,ROW_DUPLICATED,42
+raw_conversations,25713,duplicate,confidence_score,0.5934138959249888,ROW_DUPLICATED,42
+raw_conversations,12125,invalid_numeric,call_key,8096.0,8096.0,42
+raw_conversations,34080,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,38256,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,31846,duplicate,call_key,2269.0,ROW_DUPLICATED,42
+raw_conversations,20702,missing_value,confidence_score,nan,nan,42
+raw_conversations,11200,missing_value,timestamp,2026-02-03 11:09:42,nan,42
+raw_conversations,14984,invalid_numeric,timestamp,2026-04-24 15:17:16,2026-04-24 15:17:16,42
+raw_conversations,37397,invalid_numeric,timestamp,2026-02-21 15:00:36,2026-02-21 15:00:36,42
+raw_conversations,9001,invalid_timestamp,timestamp,2026-05-08 13:55:42,NaT,42
+raw_conversations,18119,invalid_foreign_key,call_key,9044.0,9044.0_BAD,42
+raw_conversations,5926,invalid_numeric,confidence_score,nan,nan,42
+raw_conversations,31876,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,31246,missing_value,confidence_score,nan,nan,42
+raw_conversations,31918,invalid_numeric,timestamp,2026-02-04 08:55:45,2026-02-04 08:55:45,42
+raw_conversations,30734,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,35753,invalid_timestamp,call_key,9092.0,NaT,42
+raw_conversations,28498,missing_value,timestamp,2026-06-30 19:36:47,nan,42
+raw_conversations,36415,missing_value,timestamp,2026-05-01 16:43:45,nan,42
+raw_conversations,27580,missing_value,confidence_score,nan,nan,42
+raw_conversations,38606,invalid_foreign_key,timestamp,2026-03-28 13:44:01,2026-03-28 13:44:01_BAD,42
+raw_conversations,36203,missing_value,timestamp,2026-01-07 17:47:17,nan,42
+raw_conversations,18583,duplicate,confidence_score,0.9210911713341128,ROW_DUPLICATED,42
+raw_conversations,24004,missing_value,timestamp,2026-04-09 10:30:16,nan,42
+raw_conversations,24281,duplicate,confidence_score,0.6597320977671853,ROW_DUPLICATED,42
+raw_conversations,19459,duplicate,call_key,5843.0,ROW_DUPLICATED,42
+raw_conversations,10190,invalid_foreign_key,call_key,5872.0,5872.0_BAD,42
+raw_conversations,20743,duplicate,confidence_score,0.3021822487677357,ROW_DUPLICATED,42
+raw_conversations,34782,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,20824,invalid_numeric,timestamp,2026-02-14 09:44:50,2026-02-14 09:44:50,42
+raw_conversations,1076,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,27948,duplicate,timestamp,2026-01-24 11:29:52,ROW_DUPLICATED,42
+raw_conversations,8679,invalid_timestamp,confidence_score,0.9630550722257524,NaT,42
+raw_conversations,34959,missing_value,call_key,318.0,nan,42
+raw_conversations,2079,duplicate,timestamp,2026-03-20 19:02:33,ROW_DUPLICATED,42
+raw_conversations,37853,invalid_timestamp,confidence_score,0.8159220180737934,NaT,42
+raw_conversations,23282,missing_value,confidence_score,nan,nan,42
+raw_conversations,21468,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,32454,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,28957,missing_value,confidence_score,0.8221786123325187,nan,42
+raw_conversations,28933,invalid_numeric,call_key,5150.0,5150.0,42
+raw_conversations,28319,missing_value,call_key,7076.0,nan,42
+raw_conversations,14981,invalid_foreign_key,confidence_score,0.7690326527618795,0.7690326527618795_BAD,42
+raw_conversations,25635,duplicate,call_key,2696.0,ROW_DUPLICATED,42
+raw_conversations,10602,invalid_numeric,call_key,6452.0,6452.0,42
+raw_conversations,18398,missing_value,timestamp,2026-06-10 09:47:31,nan,42
+raw_conversations,35183,duplicate,call_key,1089.0,ROW_DUPLICATED,42
+raw_conversations,30385,invalid_timestamp,confidence_score,0.8011351947028696,NaT,42
+raw_conversations,16967,duplicate,timestamp,2026-06-25 09:30:48,ROW_DUPLICATED,42
+raw_conversations,10757,duplicate,call_key,8594.0,ROW_DUPLICATED,42
+raw_conversations,31258,missing_value,confidence_score,nan,nan,42
+raw_conversations,6435,invalid_timestamp,confidence_score,0.6936301992064352,NaT,42
+raw_conversations,22575,invalid_foreign_key,confidence_score,0.600328196569939,0.600328196569939_BAD,42
+raw_conversations,9020,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,19959,invalid_numeric,call_key,6348.0,6348.0,42
+raw_conversations,29760,invalid_foreign_key,timestamp,2026-03-25 19:02:17,2026-03-25 19:02:17_BAD,42
+raw_conversations,8999,invalid_foreign_key,call_key,5309.0,5309.0_BAD,42
+raw_conversations,13304,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,125,missing_value,confidence_score,0.7608770765075805,nan,42
+raw_conversations,20898,invalid_foreign_key,call_key,146.0,146.0_BAD,42
+raw_conversations,33031,missing_value,confidence_score,0.3214526908226305,nan,42
+raw_conversations,734,missing_value,confidence_score,nan,nan,42
+raw_conversations,22905,invalid_numeric,timestamp,2026-04-30 19:51:18,2026-04-30 19:51:18,42
+raw_conversations,37785,invalid_foreign_key,call_key,7251.0,7251.0_BAD,42
+raw_conversations,5929,invalid_numeric,confidence_score,0.6763501903106628,0.6763501903106628,42
+raw_conversations,13132,invalid_numeric,call_key,2068.0,2068.0,42
+raw_conversations,28301,invalid_foreign_key,confidence_score,0.9329494463709772,0.9329494463709772_BAD,42
+raw_conversations,20872,missing_value,timestamp,2026-02-19 09:21:07,nan,42
+raw_conversations,36886,duplicate,timestamp,2026-06-16 15:14:33,ROW_DUPLICATED,42
+raw_conversations,26609,invalid_foreign_key,confidence_score,0.6340757275894867,0.6340757275894867_BAD,42
+raw_conversations,14696,missing_value,call_key,6361.0,nan,42
+raw_conversations,24909,invalid_timestamp,call_key,1070.0,NaT,42
+raw_conversations,32521,invalid_timestamp,call_key,904.0,NaT,42
+raw_conversations,5744,missing_value,call_key,5963.0,nan,42
+raw_conversations,20853,missing_value,timestamp,2026-03-26 19:00:16,nan,42
+raw_conversations,30369,duplicate,call_key,5585.0,ROW_DUPLICATED,42
+raw_conversations,21090,duplicate,confidence_score,nan,ROW_DUPLICATED,42
+raw_conversations,990,missing_value,timestamp,2026-03-27 12:12:57,nan,42
+raw_conversations,13076,missing_value,confidence_score,nan,nan,42
+raw_conversations,29513,invalid_numeric,timestamp,2026-03-31 11:43:56,2026-03-31 11:43:56,42
+raw_conversations,2790,duplicate,call_key,7785.0,ROW_DUPLICATED,42
+raw_conversations,11688,invalid_foreign_key,timestamp,2026-03-01 12:02:37,2026-03-01 12:02:37_BAD,42
+raw_conversations,23671,invalid_numeric,confidence_score,0.925947562106519,0.925947562106519,42
+raw_conversations,20204,invalid_numeric,call_key,6483.0,6483.0,42
+raw_conversations,17153,duplicate,timestamp,2026-03-06 14:43:52,ROW_DUPLICATED,42
+raw_conversations,7122,invalid_timestamp,timestamp,2026-03-22 14:13:06,NaT,42
+raw_conversations,18278,invalid_numeric,timestamp,2026-04-05 18:14:17,2026-04-05 18:14:17,42
+raw_conversations,10314,duplicate,call_key,6392.0,ROW_DUPLICATED,42
+raw_conversations,15201,invalid_timestamp,call_key,9476.0,NaT,42
+raw_conversations,30373,missing_value,timestamp,2026-02-09 13:54:08,nan,42
+raw_conversations,29197,missing_value,timestamp,2026-03-30 18:21:01,nan,42
+raw_conversations,8338,invalid_foreign_key,confidence_score,nan,nan_BAD,42
+raw_conversations,12359,missing_value,call_key,2270.0,nan,42
+raw_conversations,37670,duplicate,timestamp,2026-06-09 10:35:56,ROW_DUPLICATED,42
+raw_conversations,26786,duplicate,timestamp,2026-01-16 09:41:56,ROW_DUPLICATED,42
+raw_conversations,27226,invalid_timestamp,confidence_score,nan,NaT,42
+raw_conversations,29958,missing_value,timestamp,2026-05-01 13:57:54,nan,42

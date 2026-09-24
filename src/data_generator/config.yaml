@@ -1,0 +1,16 @@
+dataset:
+  customers: 2000
+  calls: 10000
+  start_date: "2026-01-01"
+  end_date: "2026-06-30"
+  random_seed: 42
+  output_dir: "data"
+
+quality:
+  anomaly_rate: 0.02
+  anomaly_distribution:
+    duplicate: 0.25
+    missing_value: 0.30
+    invalid_timestamp: 0.15
+    invalid_foreign_key: 0.15
+    invalid_numeric: 0.15
