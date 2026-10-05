@@ -1,258 +1,245 @@
 # Insightal AI — Conversational AI & BFSI Voice Analytics Platform
 
-## Project Overview
+Insightal AI is a comprehensive, end-to-end data analytics and machine learning portfolio project simulating a modern BFSI (Banking, Financial Services, and Insurance) conversational AI environment. It transforms synthetic voice interaction data into actionable operational, collections, and customer journey insights, concluding with a predictive machine learning model to identify high-risk escalations before they occur.
 
-Insightal AI is a synthetic/anonymized BFSI conversational AI analytics platform designed to analyze voice interactions across:
+![Status: Complete](https://img.shields.io/badge/Status-Complete-success) ![Domain: BFSI](https://img.shields.io/badge/Domain-BFSI-blue) ![Analytics: Power BI](https://img.shields.io/badge/Analytics-Power_BI-yellow) ![ML: scikit--learn](https://img.shields.io/badge/ML-scikit--learn-orange)
 
-- Loan Collections
-- Payment Reminders
-- Loan Applications
-- EMI Queries
-- Insurance
-- Customer Support
-- Payment Failures
-- Complaints
-- Lead Qualification
+## 1. Project Overview
 
-The core business objective is to turn conversational AI call data into operational, customer, collections, AI-quality, escalation, and business-impact insights.
+This project analyzes the lifecycle of conversational AI / voice interactions within a BFSI context. It connects raw voice interactions to conversation intelligence, evaluates the customer journey, measures collections outcomes, tracks human escalations, and finally applies predictive analytics to forecast escalation risk. The end goal is to demonstrate the measurable business impact of AI containment and highlight areas requiring human intervention.
 
-*This project uses synthetic/anonymized data for portfolio and demonstration purposes. It does not contain real customer PII.*
+*Note: This project is built entirely on synthetic/anonymized data for demonstration purposes and does not contain real customer PII.*
 
-## Business Problem
+## 2. Business Problem
 
-The project answers the following key business questions:
+Financial institutions face significant challenges in measuring and optimizing conversational AI deployments. Key business problems addressed include:
+- Limited visibility into AI call performance and true containment rates.
+- Difficulty understanding customer journey fallouts and conversation outcomes.
+- Opaque intent recognition accuracy and fallback behavior.
+- Challenges in attributing collections performance (e.g., PTP) to AI interactions.
+- Unpredictable escalations to human agents, leading to capacity strain.
+- Quantifying the actual business value (hours/cost saved) of AI containment.
 
-- How many calls are handled?
-- How effective is the AI?
-- Where are customers falling out of the journey?
-- How often does the AI contain or resolve interactions?
-- When is human escalation required?
-- How are collections performing?
-- How much operational capacity can automation create?
-- Can future escalation risk be predicted early?
+## 3. Business Objectives
 
-## Solution Overview
+- **Operational Visibility:** Establish clear metrics for call handling, containment, and resolution.
+- **AI Performance Measurement:** Quantify intent recognition accuracy, confidence, and fallback rates.
+- **Customer Journey Analysis:** Track how customers navigate AI interactions and where they drop off.
+- **Collections Analytics:** Measure Promise-to-Pay (PTP) conversion and collected amounts driven by AI.
+- **Predictive Escalation Analysis:** Predict which ongoing calls are at high risk of escalating to a human agent.
+- **Business Impact Measurement:** Model the agent hours and operational costs avoided through successful AI containment.
 
-The end-to-end analytical solution follows this data flow:
+## 4. Solution Overview
 
-Synthetic Data 
-→ MySQL 
-→ Raw Layer 
-→ Staging Layer 
-→ Analytics Layer 
-→ SQL Analytics 
-→ Python EDA 
-→ Power BI 
-→ ML Escalation Prediction
+The solution is a complete analytical pipeline structured as follows:
+
+Raw data → Staging → Analytics warehouse → SQL analytics → Python EDA → Power BI semantic model → Interactive dashboard → ML risk prediction → Explainability & business recommendations.
+
+The data architecture relies on a robust three-layer database design:
+1. `insightal_raw`
+2. `insightal_staging`
+3. `insightal_analytics`
+
+## 5. Key Business Questions
+
+The platform answers critical operational questions, including:
+- How many calls are being handled and connected?
+- How effectively is AI containing conversations?
+- How accurate is intent recognition?
+- How frequently does the system fall back?
+- What is the escalation rate?
+- What is the customer journey outcome?
+- How effective are collections campaigns?
+- What collection outcomes (PTP, amounts) are generated?
+- Where is human intervention required?
+- How much agent capacity can AI potentially free?
+- Which interactions are at higher escalation risk?
+
+## 6. End-to-End Architecture
 
 ```mermaid
-flowchart LR
-    A[Synthetic Data Generator] --> B[MySQL Raw Layer]
+flowchart TD
+    A[Synthetic Data] --> B[Raw Layer]
     B --> C[Staging Layer]
-    C --> D[Analytics Star Schema]
+    C --> D[Analytics Layer]
     D --> E[SQL Analytics]
     D --> F[Python EDA]
-    D --> G[Power BI]
-    D --> H[T3 ML Dataset]
-    H --> I[Escalation Prediction]
-    I --> J[Explainability & Validation]
+    D --> G[Power BI Semantic Model]
+    G --> H[4-Page Dashboard]
+    
+    D --> I[Analytics Features]
+    I --> J[Logistic Regression]
+    J --> K[Escalation Risk Prediction]
+    K --> L[Explainability / Robustness]
 ```
 
-## Data Architecture
+## 7. Data Model
 
-**Schemas:**
-- `insightal_raw`
-- `insightal_staging`
-- `insightal_analytics`
+The core of the platform is a Kimball-style star schema designed for analytical workloads.
 
-**Star Schema:**
+**Facts:**
+- `fact_calls`: Call-level metrics and outcomes.
+- `fact_conversation`: Turn-by-turn conversational intelligence.
 
-*Facts:*
-- `fact_calls`
-- `fact_conversation`
+**Dimensions:**
+- `dim_customer`: Customer demographics and risk segments.
+- `dim_intent`: Library of known intents.
+- `dim_bot`: AI system versions and configurations.
+- `dim_campaign`: Campaign details (e.g., Loan Collections).
+- `dim_date`: Standard date dimension.
 
-*Dimensions:*
-- `dim_customer`
-- `dim_intent`
-- `dim_bot`
-- `dim_campaign`
-- `dim_date`
-
-*Role-playing Intent Dimensions (used by Power BI):*
+**Role-Playing Intent Dimensions:**
+To accurately model conversations, `dim_intent` plays three roles in the semantic model:
 - `dim_intent_call`
 - `dim_intent_expected`
 - `dim_intent_detected`
 
-## Data Engineering & Quality
+## 8. Technology Stack
 
-**Lineage & Row Counts:**
-- Generated clean calls: 10,000
-- Raw calls: 10,050
-- Clean analytics calls: 9,885
-- Raw conversations: 39,958
-- Clean conversations: 38,978
+**Data:**
+- MySQL
+- SQL
 
-*Note: Raw anomalies are intentionally injected into the synthetic dataset and handled through staging/data-quality controls to simulate real-world ETL challenges. Do not imply the data is real-world production data.*
+**Analytics:**
+- Python
+- Pandas
+- NumPy
+- SciPy
 
-**Phase 6 Data Quality Results:**
-- Data Quality Score: 93.00
-- PASS: 85
-- WARN: 12
-- FAIL: 0
+**Visualization:**
+- Power BI
 
-## SQL Analytics
+**Machine Learning:**
+- scikit-learn (Logistic Regression, Random Forest)
 
-The data warehouse is analyzed via 13 SQL analytics files, comprising 25 analytics queries and 17 validation checks (25 successful, 0 failed).
+**Engineering:**
+- Git
+- GitHub
 
-**Major Analytical Areas:**
-- Executive KPIs
-- Call Operations
-- Bot Performance
-- Intent Analytics
-- Customer Journey
-- Escalation Analytics
-- Collections
-- Campaign Performance
-- Customer Segments
-- Time Series
-- Business Impact
-- Advanced SQL
+## 9. Data Pipeline
 
-## Key Business KPIs
+The pipeline securely processes and cleans data through the three-tier architecture. 
+Reconciliation numbers for the clean analytics population:
+- **raw_calls:** 10,050
+- **stg_calls:** 10,000
+- **fact_calls:** 9,885
+- **raw_conversations:** 39,958
+- **stg_conversations:** 39,770
+- **fact_conversation:** 38,978
 
-| KPI | Result |
-|---|---|
-| Total Calls | 9,885 |
-| Connected Calls | 6,183 |
-| Connection Rate | 62.55% |
-| Average Call Duration | 36.56 sec |
-| Median Call Duration | 33 sec |
-| Average Attempts | 1.98 |
-| Task Completion Rate | 56.93% |
-| Resolution Rate | 56.17% |
-| Containment Rate | 52.05% |
-| Escalation Rate | 36.23% |
-| Fallback Rate | 18.93% |
-| Intent Recognition Accuracy | 83.39% |
-| Average Confidence | 65.08% |
-| Bot Quality Score | 63.47% |
+Anomalies were intentionally injected into the raw synthetic data and quarantined during staging to simulate realistic ETL challenges.
 
-## Collections Analytics
+## 10. Power BI Dashboard
 
-- Collections Calls: 2,843
-- Connected Collections Calls: 1,748
-- Contact Rate: 61.48%
-- PTP Rate: 47.37%
-- Successful PTP Rate: 62.92%
-- Collection Conversion Rate: 67.83%
-- PTP Amount: ₹4.65M
-- Successful Collection Amount: ₹2.24M
-- Outstanding Amount: ₹24.38M
-- Outstanding Collected Ratio: 9.19%
+The final implementation features a polished, 4-page Power BI dashboard (1280 × 720 canvas) designed for executive and operational leadership:
 
-*Note: Outstanding Amount uses the latest available outstanding snapshot per customer rather than summing repeated call snapshots.*
+1. **Executive Overview:** *"What is happening?"* — High-level KPIs, volume trends, and operational health.
+2. **Conversational AI & Customer Journey:** *"How well is AI handling customers?"* — Intent accuracy, fallback analysis, and journey mapping.
+3. **Collections Performance:** *"What business outcome is generated?"* — Campaign success, conversion rates, and outstanding recovery.
+4. **Business Impact & Escalation:** *"Where is human intervention needed and what value is generated?"* — Modeled capacity savings, cost avoidance, and escalation drivers.
 
-## Power BI Dashboard
+## 11. Key Business KPIs
 
-The Power BI implementation consists of exactly 4 pages, using native Power BI visuals and a consistent enterprise BFSI design on a 1280 × 720 canvas:
+| Metric | Verified Value |
+| :--- | :--- |
+| **Total Calls** | 9,885 |
+| **Connected Calls** | 6,183 |
+| **Connection Rate** | 62.55% |
+| **Average Call Duration** | 36.56 sec |
+| **Median Call Duration** | 33 sec |
+| **Average Attempts** | 1.98 |
+| **Task Completion Rate** | 56.93% |
+| **Resolution Rate** | 56.17% |
+| **Containment Rate** | 52.05% |
+| **Escalation Rate** | 36.23% |
+| **Fallback Rate** | 18.93% |
+| **Average Confidence** | 65.08% |
+| **Intent Recognition Accuracy** | 83.39% |
+| **Normalized Sentiment** | 55.59% |
+| **Satisfaction Proxy** | 54.89% |
+| **Reliability** | 87.08% |
+| **Bot Quality Score** | 63.47% |
 
-1. **Executive Overview** – *"What is happening?"*
-2. **Conversational AI & Customer Journey** – *"How well is the AI handling customers?"*
-3. **Collections Performance** – *"What business outcome is generated?"*
-4. **Business Impact & Escalation** – *"Where is human intervention needed and what value is generated?"*
+## 12. Collections Analytics
 
-## Business Impact
+Specific focus was placed on Loan Collections, with careful DAX modeling to ensure the `Outstanding Amount` reflects the *latest customer snapshot* rather than double-counting historical values across multiple calls.
 
-- Agent Calls Avoided: 3,218
-- Agent Hours Freed: 268.17
-- FTE Capacity Freed: 1.49
-- Estimated Operational Cost Avoided: ₹160,900
+- **Collections Calls:** 2,843
+- **Connected Collections Calls:** 1,748
+- **Contact Rate:** 61.48%
+- **PTP (Promise to Pay) Rate:** 47.37%
+- **Successful PTP Rate:** 62.92%
+- **Collection Conversion Rate:** 67.83%
+- **PTP Amount:** ₹4.65M
+- **Successful Collection Amount:** ₹2.24M
+- **Outstanding Amount:** ₹24,379,952.04
+- **Outstanding Collected Ratio:** 9.19%
 
-*These are synthetic-model estimates based on the project's defined assumptions.*
+## 13. Business Impact
 
-## Machine Learning — Escalation Prediction
+Based on the project's analytical assumptions, AI containment modeled the following business benefits:
+- **Agent Calls Avoided:** 3,218
+- **Agent Hours Freed:** 268.17 hours
+- **FTE Capacity Freed:** 1.49
+- **Estimated Cost Avoided:** ₹160,900
 
-- **Prediction Point:** Immediately after the 3rd customer turn.
-- **Target:** `escalation_after_t3` (Target = 1 when escalation occurs strictly after T3. Calls escalating at or before T3 are excluded).
-- **Dataset:** 3,426 eligible T3 snapshots (Positive: 1,374, Negative: 2,052). Target rate: 40.11%.
+*(Note: These are modeled/estimated metrics based on synthetic business assumptions, not actual production savings).*
 
-## ML Features
+## 14. Machine Learning
 
-Emphasizing point-in-time leakage prevention, the features are divided into:
+The project culminates in a machine learning pipeline aimed at predicting the risk of escalation to a human agent immediately following the 3rd customer turn (T3). 
+- **Champion Model:** Logistic Regression
+- **Challenger:** Random Forest
+- *Note: XGBoost was not evaluated and SHAP was not used because they were intentionally unavailable in the constrained environment.*
 
-**Conversation Context:**
-- detected intent
-- running confidence
-- fallback count
-- sentiment
-- call duration so far
+Logistic Regression remained the champion due to superior calibration, interpretability, and robust performance on a highly linearly-separable feature space.
 
-**Call Metadata:**
-- bot version
-- language
-- campaign type
-- attempt number
+## 15. Model Performance
 
-**Customer History (prior calls only):**
-- previous calls
-- previous escalations
-- previous fallbacks
-- customer segment
-- age group
-- loan type
+The Logistic Regression model was evaluated on a chronological test split to prevent temporal leakage:
+- **ROC-AUC:** 0.959
+- **PR-AUC:** 0.954
+- **Precision:** 0.883
+- **Recall:** 0.867
+- **F1:** 0.875
+- **Accuracy:** 0.899
+- **Brier Score:** 0.074
 
-**Collections Context:**
-- DPD
-- DPD bucket
-- risk segment
-- outstanding amount
-
-## ML Evaluation
-
-**Primary Evaluation:** Chronological train / validation / test splits.
-- Train: 2,398
-- Validation: 514
-- Test: 514
-
-**Champion Model:** Logistic Regression remained the overall champion.
-- ROC-AUC: 0.959
-- PR-AUC: 0.954
-- Precision: 0.883
-- Recall: 0.867
-- F1: 0.875
-- Accuracy: 0.899
-- Brier: 0.074
-
-*Random Forest:*
+*Random Forest (Challenger):*
 - Test ROC-AUC: 0.952
 - Test PR-AUC: 0.950
 - Test F1: 0.865
-- Test Brier: 0.083
+- Test Brier Score: 0.083
 
-*Note: XGBoost and SHAP were not evaluated because they were unavailable in the controlled environment.*
+## 16. Explainability & Robustness
 
-## Explainability & Robustness
+Top predictors driving escalation risk included:
+- `fallback_count_t3`
+- `detected_intent_at_t3`
+- `customer_segment`
+- `dpd_bucket` / risk segment
+- `sentiment`
+- `confidence`
 
-Model decisions were analyzed using Logistic Regression coefficients, permutation importance, local TP/TN/FP/FN explanations, error analysis, threshold analysis, risk bands, and calibration.
+**Key Finding:** Fallback behavior was the strongest predictor associated with escalation risk.
+*(Interpretation note: Numeric logistic-regression coefficients are interpreted per approximately one standard deviation because numeric features were standardized. Categorical coefficients are relative to their omitted reference category).*
 
-**Secondary Customer-Disjoint Result:**
-- ROC-AUC: 0.956
+**Robustness:** A customer-disjoint GroupKFold validation strategy was employed as secondary evidence to ensure the model learned generalizable conversational patterns rather than memorizing individual customer identities, yielding a highly stable customer-disjoint ROC-AUC of 0.956.
 
-The small difference between temporal test ROC-AUC (0.959) and customer-disjoint cross-validation ROC-AUC (0.956) provides supporting evidence that performance is not primarily dependent on repeated customer identities.
+## 17. Data Quality & Validation
 
-## Model Limitations
+The integrity of the pipeline was strictly enforced:
+- **Data Quality Score:** 93.00 (85 PASS, 12 WARN, 0 FAIL).
+- Leakage audits (temporal and target) passed.
+- Referential integrity passed.
+- Temporal/business validation passed.
+- Phase 13 end-to-end repository validation and security cleanups passed.
 
-- Only applies to calls reaching the third customer turn.
-- Does not predict calls ending before T3.
-- Does not predict escalations already occurring at/before T3.
-- Trained on synthetic data; requires real-world validation.
-- Requires real-time feature generation for deployment.
-- Threshold selection requires a business cost matrix.
+## 18. Repository Structure
 
-## Repository Structure
-
-```
-Insightal_AI_BFSI_Analytics/
+```text
+insightal-ai--bfsi-analytics/
+├── README.md
 ├── docs/
 ├── sql/
 ├── python/
@@ -264,32 +251,72 @@ Insightal_AI_BFSI_Analytics/
 ├── data/
 ├── Insightal_AI_BFSI_Analytics.pbip
 ├── Insightal_AI_BFSI_Analytics.Report/
-├── Insightal_AI_BFSI_Analytics.SemanticModel/
-└── README.md
+└── Insightal_AI_BFSI_Analytics.SemanticModel/
 ```
 
-## Reproducibility
+## 19. Reproducibility / Setup
 
-1. **MySQL Setup:** Execute scripts in `sql/` to construct the database schema. Local credentials should be configured through an ignored `.env` file if required.
-2. **Python Environment:** Requirements specified for standard Python setups.
-3. **SQL Analytics:** Run the `.sql` queries located in `sql/analytics/`.
-4. **EDA:** Generate EDA visualisations by executing scripts in the `python/` directory.
-5. **ML Pipeline:** Run the Python scripts sequentially in the `ml/` folder to reproduce dataset generation, baseline, and validation phases.
+To reproduce the project environment locally:
+1. Clone the repository.
+2. Create a standard Python virtual environment.
+3. Configure database credentials using a local environment variable file (do not commit secrets). The required placeholders are:
+   - `DB_HOST`
+   - `DB_PORT`
+   - `DB_USER`
+   - `DB_PASSWORD`
+4. Run the ETL and data quality workflows (`run_etl.py`, `scripts/run_data_quality.py`).
+5. Run the ML pipeline sequentially inside the `ml/` directory.
+6. Open `Insightal_AI_BFSI_Analytics.pbip` in Power BI Desktop to view the dashboard.
 
-## Project Status
+## 20. Synthetic Data & Privacy
 
-- **Phases 1–13:** COMPLETE
-- **ML:** COMPLETE & FROZEN
-- **Power BI:** COMPLETE
-- **Final end-to-end validation:** IN PROGRESS until final audit passes.
+- The project uses synthetic/anonymized data.
+- It does not use real customer PII.
+- BFSI scenarios are modeled purely for analytical demonstration.
+- Financial/customer outcomes are synthetic.
+- Production deployment of such a system would require appropriate privacy, security, governance, and compliance controls.
 
-## Security
+## 21. Project Phases
 
-- Credentials are not committed.
-- `.env` is ignored.
-- Uses synthetic/anonymized data only.
-- Contains no real customer PII.
+- Phase 1 — Business Requirements
+- Phase 2 — Architecture & Data Model
+- Phase 3 — Data Dictionary
+- Phase 4 — Synthetic Data Generation
+- Phase 5 — MySQL ETL
+- Phase 6 — Data Quality
+- Phase 7 — SQL Analytics
+- Phase 8 — Python EDA
+- Phase 9 — Power BI Semantic Model & Dashboard
+- Phase 10 — Baseline ML (Logistic Regression)
+- Phase 11 — Candidate Models (Random Forest Comparison)
+- Phase 12 — Explainability & Robustness
+- Phase 13 — End-to-End Validation & Repository Cleanup
 
-## License / Disclaimer
+## 22. Key Insights
 
-License: Not currently specified.
+- **AI Containment:** AI containment is approximately 52%, resulting in modeled agent-capacity benefits.
+- **Intent Accuracy:** Intent recognition is approximately 83%.
+- **Drivers of Escalation:** Fallback behavior is strongly associated with escalation risk in the synthetic dataset.
+- **Actionable Risk:** High-risk interactions can be identified dynamically and prioritized for human intervention.
+- **Collections Value:** Collections performance can be analyzed seamlessly at the customer and campaign level, demonstrating the tangible financial value generated prior to escalation.
+
+## 23. Limitations
+
+- **Synthetic Constraints:** The project relies on synthetic data; no real production traffic or real customer PII is utilized.
+- **Model Scope:** The ML results are experimental/portfolio-level. The model only applies to calls reaching the third customer turn and does not predict escalations occurring earlier.
+- **Technology Constraints:** XGBoost was not evaluated and SHAP was unavailable.
+- **Business Impact:** Business impact figures are strictly modeled estimates based on predefined constraints. Real deployment would require rigorous production monitoring and governance.
+
+## 24. Future Enhancements
+
+- Real-time streaming ingestion.
+- Production model monitoring and drift detection.
+- SHAP-based explanations when available.
+- XGBoost benchmarking.
+- Real-time alerting for high-risk customer interactions.
+- Human-in-the-loop escalation workflows.
+- Role-based Power BI access and advanced BFSI compliance/governance controls.
+
+## 25. Author
+
+Developed as an end-to-end portfolio demonstration of advanced Data Analytics, Business Intelligence, and Machine Learning capabilities in the BFSI domain.
