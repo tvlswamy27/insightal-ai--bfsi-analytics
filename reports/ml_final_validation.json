@@ -1,0 +1,723 @@
+{
+    "champion_model": "Logistic Regression",
+    "dataset_summary": {
+        "total_rows": 3426,
+        "train": 2398,
+        "val": 514,
+        "test": 514,
+        "target_rate": 0.4011
+    },
+    "baseline_metrics_test": {
+        "roc_auc": 0.9591165413533835,
+        "pr_auc": 0.9544664334622298,
+        "brier_score": 0.07405291875631313,
+        "precision": 0.883495145631068,
+        "recall": 0.8666666666666667,
+        "f1": 0.875,
+        "accuracy": 0.8988326848249028,
+        "tp": 182,
+        "fp": 24,
+        "tn": 280,
+        "fn": 28
+    },
+    "global_coefficients": {
+        "top_positive": [
+            {
+                "feature": "fallback_count_t3",
+                "coefficient": 2.219910754640358,
+                "odds_ratio": 9.206509190993662
+            },
+            {
+                "feature": "detected_intent_at_t3_6.0",
+                "coefficient": 0.8874966006480092,
+                "odds_ratio": 2.429041173424305
+            },
+            {
+                "feature": "detected_intent_at_t3_nan",
+                "coefficient": 0.6149985293767245,
+                "odds_ratio": 1.8496538794122803
+            },
+            {
+                "feature": "detected_intent_at_t3_4.0",
+                "coefficient": 0.5736526873616201,
+                "odds_ratio": 1.7747377887402191
+            },
+            {
+                "feature": "customer_segment_Wealth",
+                "coefficient": 0.44508825934483215,
+                "odds_ratio": 1.5606279297530312
+            },
+            {
+                "feature": "dpd_bucket_at_call_90+",
+                "coefficient": 0.42901362975951446,
+                "odds_ratio": 1.5357419660483758
+            },
+            {
+                "feature": "age_group_26-35",
+                "coefficient": 0.41331501523568065,
+                "odds_ratio": 1.5118211976402665
+            },
+            {
+                "feature": "attempt_number",
+                "coefficient": 0.36769502172624074,
+                "odds_ratio": 1.444401460729789
+            },
+            {
+                "feature": "loan_type_Auto Loan",
+                "coefficient": 0.36353632757446835,
+                "odds_ratio": 1.438407109797548
+            },
+            {
+                "feature": "campaign_type_Customer Support",
+                "coefficient": 0.2822266060932411,
+                "odds_ratio": 1.3260791835651835
+            },
+            {
+                "feature": "days_past_due_at_call",
+                "coefficient": 0.2531080795825327,
+                "odds_ratio": 1.288022478243821
+            },
+            {
+                "feature": "current_sentiment_t3_Negative",
+                "coefficient": 0.24764232791327062,
+                "odds_ratio": 1.2810016717043915
+            },
+            {
+                "feature": "outstanding_amount_at_call",
+                "coefficient": 0.24469192863745906,
+                "odds_ratio": 1.2772277752881098
+            },
+            {
+                "feature": "risk_segment_at_call_High",
+                "coefficient": 0.2397316137436633,
+                "odds_ratio": 1.270908010301773
+            },
+            {
+                "feature": "detected_intent_at_t3_18.0",
+                "coefficient": 0.2370763171787691,
+                "odds_ratio": 1.2675378489967282
+            }
+        ],
+        "top_negative": [
+            {
+                "feature": "dpd_bucket_at_call_31-60",
+                "coefficient": -0.2139483260511995,
+                "odds_ratio": 0.8073901049797014
+            },
+            {
+                "feature": "campaign_type_Lead Qualification",
+                "coefficient": -0.22375161032961816,
+                "odds_ratio": 0.7995137006520082
+            },
+            {
+                "feature": "age_group_65+",
+                "coefficient": -0.23717867848403296,
+                "odds_ratio": 0.7888503248442696
+            },
+            {
+                "feature": "loan_type_nan",
+                "coefficient": -0.24871928405327356,
+                "odds_ratio": 0.7797988446338657
+            },
+            {
+                "feature": "age_group_56-65",
+                "coefficient": -0.27491182090992916,
+                "odds_ratio": 0.7596391045567706
+            },
+            {
+                "feature": "campaign_type_Insurance Renewal",
+                "coefficient": -0.2827858815390224,
+                "odds_ratio": 0.7536811476314464
+            },
+            {
+                "feature": "customer_segment_Premium",
+                "coefficient": -0.2850995986661701,
+                "odds_ratio": 0.7519393584325387
+            },
+            {
+                "feature": "current_sentiment_t3_Positive",
+                "coefficient": -0.288058234222888,
+                "odds_ratio": 0.7497179317266464
+            },
+            {
+                "feature": "loan_type_Home Loan",
+                "coefficient": -0.388624769777556,
+                "odds_ratio": 0.6779886241125546
+            },
+            {
+                "feature": "detected_intent_at_t3_19.0",
+                "coefficient": -0.3933511227773915,
+                "odds_ratio": 0.6747917712237956
+            },
+            {
+                "feature": "detected_intent_at_t3_3.0",
+                "coefficient": -0.45697535166168013,
+                "odds_ratio": 0.6331959470983421
+            },
+            {
+                "feature": "detected_intent_at_t3_16.0",
+                "coefficient": -0.6070838585761096,
+                "odds_ratio": 0.5449376695943818
+            },
+            {
+                "feature": "running_confidence_t3",
+                "coefficient": -0.9894743555575883,
+                "odds_ratio": 0.371772059587313
+            },
+            {
+                "feature": "running_sentiment_score_t3",
+                "coefficient": -1.0342346792677297,
+                "odds_ratio": 0.35549834709632283
+            },
+            {
+                "feature": "detected_intent_at_t3_5.0",
+                "coefficient": -1.1767253490387213,
+                "odds_ratio": 0.308286618544732
+            }
+        ]
+    },
+    "permutation_importance": [
+        {
+            "feature": "fallback_count_t3",
+            "importance": 0.14836931557188793
+        },
+        {
+            "feature": "running_confidence_t3",
+            "importance": 0.029658023537611065
+        },
+        {
+            "feature": "running_sentiment_score_t3",
+            "importance": 0.027006478386897514
+        },
+        {
+            "feature": "attempt_number",
+            "importance": 0.016222894524258336
+        },
+        {
+            "feature": "days_past_due_at_call",
+            "importance": 0.0022713953083173476
+        },
+        {
+            "feature": "dpd_bucket_at_call",
+            "importance": 0.001168960765368343
+        },
+        {
+            "feature": "previous_escalation_count",
+            "importance": 0.0010770912201226279
+        },
+        {
+            "feature": "risk_segment_at_call",
+            "importance": 0.0009313671138707402
+        },
+        {
+            "feature": "age_group",
+            "importance": 0.0008648408914514238
+        },
+        {
+            "feature": "detected_intent_at_t3",
+            "importance": 0.0006557584781334391
+        },
+        {
+            "feature": "call_duration_so_far_t3",
+            "importance": 0.00019641075190472977
+        },
+        {
+            "feature": "bot_version",
+            "importance": 0.0001932428365514216
+        },
+        {
+            "feature": "current_sentiment_t3",
+            "importance": 0.000161563683018362
+        },
+        {
+            "feature": "outstanding_amount_at_call",
+            "importance": -3.484706888630118e-05
+        },
+        {
+            "feature": "loan_type",
+            "importance": -4.1182899592917546e-05
+        }
+    ],
+    "shap_status": "SHAP was not available in the controlled environment; coefficient and permutation-based explanations were used.",
+    "local_explanations": [
+        {
+            "case_id": "TP-001",
+            "actual_outcome": 1,
+            "predicted_probability": 0.9999970398365841,
+            "predicted_class": 1,
+            "top_positive_contributions": [
+                {
+                    "feature": "fallback_count_t3",
+                    "contribution": 4.818032894492578
+                },
+                {
+                    "feature": "running_sentiment_score_t3",
+                    "contribution": 2.4813203908237265
+                },
+                {
+                    "feature": "running_confidence_t3",
+                    "contribution": 2.421494640055536
+                },
+                {
+                    "feature": "attempt_number",
+                    "contribution": 0.761755405450378
+                },
+                {
+                    "feature": "days_past_due_at_call",
+                    "contribution": 0.647910095619795
+                }
+            ],
+            "top_negative_contributions": [
+                {
+                    "feature": "age_group_56-65",
+                    "contribution": -0.0
+                },
+                {
+                    "feature": "bot_version_v1.0",
+                    "contribution": -0.007530351468738997
+                },
+                {
+                    "feature": "age_group_36-45",
+                    "contribution": -0.021934611901420018
+                },
+                {
+                    "feature": "customer_segment_Mass",
+                    "contribution": -0.15816477787453523
+                },
+                {
+                    "feature": "previous_call_count",
+                    "contribution": -0.575265649279314
+                }
+            ]
+        },
+        {
+            "case_id": "TN-001",
+            "actual_outcome": 0,
+            "predicted_probability": 0.0004788920210523338,
+            "predicted_class": 0,
+            "top_positive_contributions": [
+                {
+                    "feature": "previous_escalation_count",
+                    "contribution": 0.13406239410467505
+                },
+                {
+                    "feature": "language_English",
+                    "contribution": 0.11603649094631349
+                },
+                {
+                    "feature": "loan_type_Credit Card",
+                    "contribution": 0.08652722987821129
+                },
+                {
+                    "feature": "previous_fallback_count",
+                    "contribution": 0.06316493383166877
+                },
+                {
+                    "feature": "previous_call_count",
+                    "contribution": 0.056174857421232995
+                }
+            ],
+            "top_negative_contributions": [
+                {
+                    "feature": "current_sentiment_t3_Positive",
+                    "contribution": -0.288058234222888
+                },
+                {
+                    "feature": "detected_intent_at_t3_5.0",
+                    "contribution": -1.1767253490387213
+                },
+                {
+                    "feature": "running_confidence_t3",
+                    "contribution": -1.1822367634772717
+                },
+                {
+                    "feature": "running_sentiment_score_t3",
+                    "contribution": -1.4898984418709684
+                },
+                {
+                    "feature": "fallback_count_t3",
+                    "contribution": -2.520719729470921
+                }
+            ]
+        },
+        {
+            "case_id": "FP-001",
+            "actual_outcome": 0,
+            "predicted_probability": 0.8949429263768993,
+            "predicted_class": 1,
+            "top_positive_contributions": [
+                {
+                    "feature": "running_sentiment_score_t3",
+                    "contribution": 1.2283334540710933
+                },
+                {
+                    "feature": "running_confidence_t3",
+                    "contribution": 0.9191508986887398
+                },
+                {
+                    "feature": "attempt_number",
+                    "contribution": 0.761755405450378
+                },
+                {
+                    "feature": "age_group_26-35",
+                    "contribution": 0.41331501523568065
+                },
+                {
+                    "feature": "current_sentiment_t3_Negative",
+                    "contribution": 0.24764232791327062
+                }
+            ],
+            "top_negative_contributions": [
+                {
+                    "feature": "risk_segment_at_call_Low",
+                    "contribution": -0.14894980078253048
+                },
+                {
+                    "feature": "customer_segment_Mass",
+                    "contribution": -0.15816477787453523
+                },
+                {
+                    "feature": "days_past_due_at_call",
+                    "contribution": -0.15875926827743223
+                },
+                {
+                    "feature": "outstanding_amount_at_call",
+                    "contribution": -0.17166142037854581
+                },
+                {
+                    "feature": "previous_call_count",
+                    "contribution": -0.47002556482922286
+                }
+            ]
+        },
+        {
+            "case_id": "FN-001",
+            "actual_outcome": 1,
+            "predicted_probability": 0.0013475146567561104,
+            "predicted_class": 0,
+            "top_positive_contributions": [
+                {
+                    "feature": "attempt_number",
+                    "contribution": 0.761755405450378
+                },
+                {
+                    "feature": "language_English",
+                    "contribution": 0.11603649094631349
+                },
+                {
+                    "feature": "dpd_bucket_at_call_0",
+                    "contribution": 0.025101941643775414
+                },
+                {
+                    "feature": "detected_intent_at_t3_10.0",
+                    "contribution": -0.0
+                },
+                {
+                    "feature": "detected_intent_at_t3_1.0",
+                    "contribution": 0.0
+                }
+            ],
+            "top_negative_contributions": [
+                {
+                    "feature": "loan_type_Home Loan",
+                    "contribution": -0.388624769777556
+                },
+                {
+                    "feature": "running_confidence_t3",
+                    "contribution": -0.8040030315394872
+                },
+                {
+                    "feature": "running_sentiment_score_t3",
+                    "contribution": -0.9908220936169359
+                },
+                {
+                    "feature": "detected_intent_at_t3_5.0",
+                    "contribution": -1.1767253490387213
+                },
+                {
+                    "feature": "fallback_count_t3",
+                    "contribution": -2.520719729470921
+                }
+            ]
+        }
+    ],
+    "error_analysis": {
+        "False Positives": 24,
+        "False Negatives": 28,
+        "True Positives": 182,
+        "True Negatives": 280,
+        "FP_median_fallback": 1.0,
+        "FN_median_fallback": 1.0,
+        "TP_median_fallback": 2.0,
+        "TN_median_fallback": 0.0
+    },
+    "threshold_analysis_val": [
+        {
+            "threshold": 0.3,
+            "precision": 0.782608695652174,
+            "recall": 0.8866995073891626,
+            "f1": 0.8314087759815243,
+            "accuracy": 0.857976653696498,
+            "tp": 180,
+            "fp": 50,
+            "tn": 261,
+            "fn": 23,
+            "predicted_escalation_rate": 0.4474708171206226,
+            "fpr": 0.1607717041800643,
+            "fnr": 0.11330049261083744
+        },
+        {
+            "threshold": 0.35,
+            "precision": 0.8211009174311926,
+            "recall": 0.8817733990147784,
+            "f1": 0.850356294536817,
+            "accuracy": 0.877431906614786,
+            "tp": 179,
+            "fp": 39,
+            "tn": 272,
+            "fn": 24,
+            "predicted_escalation_rate": 0.42412451361867703,
+            "fpr": 0.12540192926045016,
+            "fnr": 0.11822660098522167
+        },
+        {
+            "threshold": 0.4,
+            "precision": 0.8341232227488151,
+            "recall": 0.8669950738916257,
+            "f1": 0.8502415458937198,
+            "accuracy": 0.8793774319066148,
+            "tp": 176,
+            "fp": 35,
+            "tn": 276,
+            "fn": 27,
+            "predicted_escalation_rate": 0.41050583657587547,
+            "fpr": 0.11254019292604502,
+            "fnr": 0.1330049261083744
+        },
+        {
+            "threshold": 0.45,
+            "precision": 0.8724489795918368,
+            "recall": 0.8423645320197044,
+            "f1": 0.8571428571428571,
+            "accuracy": 0.8891050583657587,
+            "tp": 171,
+            "fp": 25,
+            "tn": 286,
+            "fn": 32,
+            "predicted_escalation_rate": 0.38132295719844356,
+            "fpr": 0.08038585209003216,
+            "fnr": 0.15763546798029557
+        },
+        {
+            "threshold": 0.5,
+            "precision": 0.8870967741935484,
+            "recall": 0.812807881773399,
+            "f1": 0.8483290488431876,
+            "accuracy": 0.8852140077821011,
+            "tp": 165,
+            "fp": 21,
+            "tn": 290,
+            "fn": 38,
+            "predicted_escalation_rate": 0.36186770428015563,
+            "fpr": 0.06752411575562701,
+            "fnr": 0.18719211822660098
+        },
+        {
+            "threshold": 0.55,
+            "precision": 0.8994413407821229,
+            "recall": 0.7931034482758621,
+            "f1": 0.8429319371727748,
+            "accuracy": 0.8832684824902723,
+            "tp": 161,
+            "fp": 18,
+            "tn": 293,
+            "fn": 42,
+            "predicted_escalation_rate": 0.34824902723735407,
+            "fpr": 0.05787781350482315,
+            "fnr": 0.20689655172413793
+        },
+        {
+            "threshold": 0.6,
+            "precision": 0.9122807017543859,
+            "recall": 0.7684729064039408,
+            "f1": 0.8342245989304813,
+            "accuracy": 0.8793774319066148,
+            "tp": 156,
+            "fp": 15,
+            "tn": 296,
+            "fn": 47,
+            "predicted_escalation_rate": 0.3326848249027237,
+            "fpr": 0.04823151125401929,
+            "fnr": 0.2315270935960591
+        },
+        {
+            "threshold": 0.65,
+            "precision": 0.9263803680981595,
+            "recall": 0.7438423645320197,
+            "f1": 0.825136612021858,
+            "accuracy": 0.8754863813229572,
+            "tp": 151,
+            "fp": 12,
+            "tn": 299,
+            "fn": 52,
+            "predicted_escalation_rate": 0.31712062256809337,
+            "fpr": 0.03858520900321544,
+            "fnr": 0.2561576354679803
+        },
+        {
+            "threshold": 0.7,
+            "precision": 0.930379746835443,
+            "recall": 0.7241379310344828,
+            "f1": 0.814404432132964,
+            "accuracy": 0.8696498054474708,
+            "tp": 147,
+            "fp": 11,
+            "tn": 300,
+            "fn": 56,
+            "predicted_escalation_rate": 0.30739299610894943,
+            "fpr": 0.03536977491961415,
+            "fnr": 0.27586206896551724
+        }
+    ],
+    "risk_bands_val": [
+        {
+            "band": "Low",
+            "count": 284,
+            "percentage": 0.5525291828793775,
+            "actual_rate": 0.08098591549295775,
+            "avg_predicted_probability": 0.06579360279337255
+        },
+        {
+            "band": "Moderate",
+            "count": 44,
+            "percentage": 0.08560311284046693,
+            "actual_rate": 0.3409090909090909,
+            "avg_predicted_probability": 0.40064416471656017
+        },
+        {
+            "band": "High",
+            "count": 28,
+            "percentage": 0.054474708171206226,
+            "actual_rate": 0.6428571428571429,
+            "avg_predicted_probability": 0.5932973307655665
+        },
+        {
+            "band": "Very High",
+            "count": 158,
+            "percentage": 0.30739299610894943,
+            "actual_rate": 0.930379746835443,
+            "avg_predicted_probability": 0.9374548089814393
+        }
+    ],
+    "risk_bands_test": [
+        {
+            "band": "Low",
+            "count": 270,
+            "percentage": 0.5252918287937743,
+            "actual_rate": 0.06296296296296296,
+            "avg_predicted_probability": 0.059849872504504284
+        },
+        {
+            "band": "Moderate",
+            "count": 38,
+            "percentage": 0.07392996108949416,
+            "actual_rate": 0.2894736842105263,
+            "avg_predicted_probability": 0.3856692921963858
+        },
+        {
+            "band": "High",
+            "count": 34,
+            "percentage": 0.06614785992217899,
+            "actual_rate": 0.5882352941176471,
+            "avg_predicted_probability": 0.6072493803894687
+        },
+        {
+            "band": "Very High",
+            "count": 172,
+            "percentage": 0.3346303501945525,
+            "actual_rate": 0.9418604651162791,
+            "avg_predicted_probability": 0.944349045319285
+        }
+    ],
+    "calibration_bins": [
+        {
+            "bin": 0,
+            "mean_predicted": 0.02780132886843291,
+            "actual_rate": 0.028708133971291867
+        },
+        {
+            "bin": 1,
+            "mean_predicted": 0.12997643941319678,
+            "actual_rate": 0.15384615384615385
+        },
+        {
+            "bin": 2,
+            "mean_predicted": 0.23999575934540915,
+            "actual_rate": 0.22727272727272727
+        },
+        {
+            "bin": 3,
+            "mean_predicted": 0.343104977556193,
+            "actual_rate": 0.22727272727272727
+        },
+        {
+            "bin": 4,
+            "mean_predicted": 0.4441952248266509,
+            "actual_rate": 0.375
+        },
+        {
+            "bin": 5,
+            "mean_predicted": 0.5575700727775366,
+            "actual_rate": 0.4666666666666667
+        },
+        {
+            "bin": 6,
+            "mean_predicted": 0.646469886398889,
+            "actual_rate": 0.6842105263157895
+        },
+        {
+            "bin": 7,
+            "mean_predicted": 0.7466589425657524,
+            "actual_rate": 0.6470588235294118
+        },
+        {
+            "bin": 8,
+            "mean_predicted": 0.8512828924965975,
+            "actual_rate": 0.8095238095238095
+        },
+        {
+            "bin": 9,
+            "mean_predicted": 0.9840141270811249,
+            "actual_rate": 1.0
+        }
+    ],
+    "customer_disjoint_robustness": {
+        "temporal_test_roc_auc": 0.9591165413533835,
+        "disjoint_cv_roc_auc": 0.9562271226112834
+    },
+    "leakage_audit": {
+        "target_absent_from_X": true,
+        "identifiers_absent_from_X": true,
+        "prohibited_fields_absent": true,
+        "feature_count_20": true,
+        "dataset_rows_3426": true,
+        "call_key_unique": true,
+        "prediction_timestamp_valid": true,
+        "prediction_timestamp_sorted": true,
+        "train_precedes_validation": true,
+        "validation_precedes_test": true,
+        "no_future_fields": true,
+        "model_artifact_loads": true,
+        "predictions_finite": true,
+        "predictions_between_0_1": true,
+        "no_target_derived_feature_exists": true,
+        "test_predictions_generated_after_fitting": true,
+        "no_test_metric_for_threshold": true,
+        "no_test_metric_for_model": true
+    },
+    "limitations": [
+        "Model only applies to calls reaching the 3rd customer turn.",
+        "Does not predict escalation prior to T3."
+    ],
+    "synthetic_data_disclosure": "Trained on synthetic data. Importances reflect synthetic data generation logic, not biological or sociological causal facts."
+}

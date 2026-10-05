@@ -1,0 +1,275 @@
+{
+    "dataset_version": "ml/data/ml_dataset_t3.csv",
+    "row_counts": {
+        "total": 3426,
+        "train": 2398,
+        "val": 514,
+        "test": 514
+    },
+    "feature_count": 20,
+    "target_distribution": {
+        "positive_rate": 0.4010507880910683,
+        "total_positives": 1374
+    },
+    "split_boundaries": {
+        "train_start": "2026-01-01 09:03:44",
+        "train_end": "2026-05-01 08:55:09",
+        "val_start": "2026-05-01 09:30:41",
+        "val_end": "2026-05-31 17:15:00",
+        "test_start": "2026-05-31 17:39:59",
+        "test_end": "2026-06-30 17:05:36"
+    },
+    "preprocessing_summary": {
+        "numeric_imputation": "median",
+        "categorical_imputation": "Missing",
+        "scaling": "StandardScaler",
+        "encoding": "OneHotEncoder(handle_unknown=ignore)"
+    },
+    "model_configuration": {
+        "algorithm": "LogisticRegression",
+        "random_state": 42,
+        "max_iter": 1000
+    },
+    "metrics": {
+        "train": {
+            "roc_auc": 0.9623717465496755,
+            "pr_auc": 0.952427428534845,
+            "brier_score": 0.07192154407323881,
+            "precision": 0.8971553610503282,
+            "recall": 0.8532778355879292,
+            "f1": 0.8746666666666667,
+            "accuracy": 0.9020016680567139,
+            "tp": 820,
+            "fp": 94,
+            "tn": 1343,
+            "fn": 141,
+            "positive_predictions": 914,
+            "negative_predictions": 1484,
+            "actual_positives": 961,
+            "actual_negatives": 1437
+        },
+        "validation": {
+            "roc_auc": 0.9493450335007049,
+            "pr_auc": 0.9410921588134508,
+            "brier_score": 0.08292681043587048,
+            "precision": 0.8870967741935484,
+            "recall": 0.812807881773399,
+            "f1": 0.8483290488431876,
+            "accuracy": 0.8852140077821011,
+            "tp": 165,
+            "fp": 21,
+            "tn": 290,
+            "fn": 38,
+            "positive_predictions": 186,
+            "negative_predictions": 328,
+            "actual_positives": 203,
+            "actual_negatives": 311
+        },
+        "test": {
+            "roc_auc": 0.9591165413533835,
+            "pr_auc": 0.9544664334622298,
+            "brier_score": 0.07405291875631313,
+            "precision": 0.883495145631068,
+            "recall": 0.8666666666666667,
+            "f1": 0.875,
+            "accuracy": 0.8988326848249028,
+            "tp": 182,
+            "fp": 24,
+            "tn": 280,
+            "fn": 28,
+            "positive_predictions": 206,
+            "negative_predictions": 308,
+            "actual_positives": 210,
+            "actual_negatives": 304
+        }
+    },
+    "threshold_analysis_validation": [
+        {
+            "threshold": 0.3,
+            "precision": 0.782608695652174,
+            "recall": 0.8866995073891626,
+            "f1": 0.8314087759815243,
+            "accuracy": 0.857976653696498,
+            "tp": 180,
+            "fp": 50,
+            "tn": 261,
+            "fn": 23
+        },
+        {
+            "threshold": 0.35,
+            "precision": 0.8211009174311926,
+            "recall": 0.8817733990147784,
+            "f1": 0.850356294536817,
+            "accuracy": 0.877431906614786,
+            "tp": 179,
+            "fp": 39,
+            "tn": 272,
+            "fn": 24
+        },
+        {
+            "threshold": 0.4,
+            "precision": 0.8341232227488151,
+            "recall": 0.8669950738916257,
+            "f1": 0.8502415458937198,
+            "accuracy": 0.8793774319066148,
+            "tp": 176,
+            "fp": 35,
+            "tn": 276,
+            "fn": 27
+        },
+        {
+            "threshold": 0.45,
+            "precision": 0.8724489795918368,
+            "recall": 0.8423645320197044,
+            "f1": 0.8571428571428571,
+            "accuracy": 0.8891050583657587,
+            "tp": 171,
+            "fp": 25,
+            "tn": 286,
+            "fn": 32
+        },
+        {
+            "threshold": 0.5,
+            "precision": 0.8870967741935484,
+            "recall": 0.812807881773399,
+            "f1": 0.8483290488431876,
+            "accuracy": 0.8852140077821011,
+            "tp": 165,
+            "fp": 21,
+            "tn": 290,
+            "fn": 38
+        },
+        {
+            "threshold": 0.55,
+            "precision": 0.8994413407821229,
+            "recall": 0.7931034482758621,
+            "f1": 0.8429319371727748,
+            "accuracy": 0.8832684824902723,
+            "tp": 161,
+            "fp": 18,
+            "tn": 293,
+            "fn": 42
+        },
+        {
+            "threshold": 0.6,
+            "precision": 0.9122807017543859,
+            "recall": 0.7684729064039408,
+            "f1": 0.8342245989304813,
+            "accuracy": 0.8793774319066148,
+            "tp": 156,
+            "fp": 15,
+            "tn": 296,
+            "fn": 47
+        },
+        {
+            "threshold": 0.65,
+            "precision": 0.9263803680981595,
+            "recall": 0.7438423645320197,
+            "f1": 0.825136612021858,
+            "accuracy": 0.8754863813229572,
+            "tp": 151,
+            "fp": 12,
+            "tn": 299,
+            "fn": 52
+        },
+        {
+            "threshold": 0.7,
+            "precision": 0.930379746835443,
+            "recall": 0.7241379310344828,
+            "f1": 0.814404432132964,
+            "accuracy": 0.8696498054474708,
+            "tp": 147,
+            "fp": 11,
+            "tn": 300,
+            "fn": 56
+        }
+    ],
+    "interpretability": {
+        "top_positive_risk_signals": [
+            {
+                "feature": "fallback_count_t3",
+                "coefficient": 2.219910754640358
+            },
+            {
+                "feature": "detected_intent_at_t3_6.0",
+                "coefficient": 0.8874966006480092
+            },
+            {
+                "feature": "detected_intent_at_t3_nan",
+                "coefficient": 0.6149985293767245
+            },
+            {
+                "feature": "detected_intent_at_t3_4.0",
+                "coefficient": 0.5736526873616201
+            },
+            {
+                "feature": "customer_segment_Wealth",
+                "coefficient": 0.44508825934483215
+            },
+            {
+                "feature": "dpd_bucket_at_call_90+",
+                "coefficient": 0.42901362975951446
+            },
+            {
+                "feature": "age_group_26-35",
+                "coefficient": 0.41331501523568065
+            },
+            {
+                "feature": "attempt_number",
+                "coefficient": 0.36769502172624074
+            },
+            {
+                "feature": "loan_type_Auto Loan",
+                "coefficient": 0.36353632757446835
+            },
+            {
+                "feature": "campaign_type_Customer Support",
+                "coefficient": 0.2822266060932411
+            }
+        ],
+        "top_negative_risk_signals": [
+            {
+                "feature": "detected_intent_at_t3_5.0",
+                "coefficient": -1.1767253490387213
+            },
+            {
+                "feature": "running_sentiment_score_t3",
+                "coefficient": -1.0342346792677297
+            },
+            {
+                "feature": "running_confidence_t3",
+                "coefficient": -0.9894743555575883
+            },
+            {
+                "feature": "detected_intent_at_t3_16.0",
+                "coefficient": -0.6070838585761096
+            },
+            {
+                "feature": "detected_intent_at_t3_3.0",
+                "coefficient": -0.45697535166168013
+            },
+            {
+                "feature": "detected_intent_at_t3_19.0",
+                "coefficient": -0.3933511227773915
+            },
+            {
+                "feature": "loan_type_Home Loan",
+                "coefficient": -0.388624769777556
+            },
+            {
+                "feature": "current_sentiment_t3_Positive",
+                "coefficient": -0.288058234222888
+            },
+            {
+                "feature": "customer_segment_Premium",
+                "coefficient": -0.2850995986661701
+            },
+            {
+                "feature": "campaign_type_Insurance Renewal",
+                "coefficient": -0.2827858815390224
+            }
+        ]
+    },
+    "execution_status": "SUCCESS",
+    "synthetic_data_disclosure": "Trained on synthetic data. Importances reflect synthetic data generation logic, not biological or sociological causal facts."
+}

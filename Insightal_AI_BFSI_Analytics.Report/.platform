@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Insightal_AI_BFSI_Analytics"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "ff006b7a-584f-4774-9226-598acfc88eff"
+  }
+}

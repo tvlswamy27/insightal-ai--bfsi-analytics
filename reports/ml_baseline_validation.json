@@ -1,0 +1,12 @@
+{
+    "no_target_in_X": true,
+    "no_identifiers_in_X": true,
+    "no_prohibited_leakage_fields": true,
+    "preprocessing_fitted_only_on_train": true,
+    "chronological_ordering_preserved": true,
+    "no_duplicate_snapshots": true,
+    "all_predictions_finite": true,
+    "probabilities_between_0_and_1": true,
+    "metrics_finite": true,
+    "output_artifacts_exist": true
+}

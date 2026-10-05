@@ -1,0 +1,62 @@
+{
+    "models_compared": [
+        "Logistic Regression",
+        "Random Forest"
+    ],
+    "validation_metrics": {
+        "Logistic Regression": {
+            "ROC-AUC": 0.9493450335007049,
+            "PR-AUC": 0.9410921588134508,
+            "Precision": 0.8870967741935484,
+            "Recall": 0.812807881773399,
+            "F1": 0.8483290488431876,
+            "Accuracy": 0.8852140077821011,
+            "Brier Score": 0.08292681043587048
+        },
+        "Random Forest": {
+            "ROC-AUC": 0.94414965232129,
+            "PR-AUC": 0.9359564038942598,
+            "Precision": 0.8743455497382199,
+            "Recall": 0.8226600985221675,
+            "F1": 0.8477157360406091,
+            "Accuracy": 0.8832684824902723,
+            "Brier Score": 0.08937391901651463
+        }
+    },
+    "test_metrics": {
+        "Logistic Regression": {
+            "ROC-AUC": 0.9591165413533835,
+            "PR-AUC": 0.9544664334622298,
+            "Precision": 0.883495145631068,
+            "Recall": 0.8666666666666667,
+            "F1": 0.875,
+            "Accuracy": 0.8988326848249028,
+            "Brier Score": 0.07405291875631313
+        },
+        "Random Forest": {
+            "ROC-AUC": 0.9520363408521303,
+            "PR-AUC": 0.9502614622808858,
+            "Precision": 0.8737864077669902,
+            "Recall": 0.8571428571428571,
+            "F1": 0.8653846153846154,
+            "Accuracy": 0.8910505836575876,
+            "Brier Score": 0.08370862567596679
+        }
+    },
+    "overfitting_analysis": {
+        "Random_Forest": {
+            "train_val_roc_gap": 0.053737320263663846,
+            "train_val_pr_gap": 0.060836099083632855,
+            "val_test_roc_gap": -0.007886688530840291
+        }
+    },
+    "selection": {
+        "best_validation_roc_auc": "Logistic Regression",
+        "best_validation_pr_auc": "Logistic Regression",
+        "best_validation_f1": "Logistic Regression",
+        "best_validation_brier": "Logistic Regression",
+        "overall_candidate_model": "Logistic Regression",
+        "meaningful_improvement_over_lr": false,
+        "reasoning": "RF ROC difference is -0.0052. Simpler model preferred unless improvement is substantial."
+    }
+}

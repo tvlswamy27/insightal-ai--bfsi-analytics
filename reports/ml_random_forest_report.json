@@ -1,0 +1,265 @@
+{
+    "dataset_version": "ml/data/ml_dataset_t3.csv",
+    "row_counts": {
+        "total": 3426,
+        "train": 2398,
+        "val": 514,
+        "test": 514
+    },
+    "feature_count": 20,
+    "target_distribution": {
+        "positive_rate": 0.4010507880910683,
+        "total_positives": 1374
+    },
+    "preprocessing_summary": {
+        "numeric_imputation": "median",
+        "categorical_imputation": "Missing",
+        "scaling": "None",
+        "encoding": "OneHotEncoder(handle_unknown=ignore)"
+    },
+    "model_configuration": {
+        "algorithm": "RandomForestClassifier",
+        "n_estimators": 500,
+        "max_depth": "None",
+        "min_samples_leaf": 2,
+        "class_weight": "balanced",
+        "random_state": 42
+    },
+    "metrics": {
+        "train": {
+            "roc_auc": 0.9978869725849538,
+            "pr_auc": 0.9967925029778927,
+            "brier_score": 0.034419663196064876,
+            "precision": 0.975635593220339,
+            "recall": 0.9583766909469302,
+            "f1": 0.9669291338582677,
+            "accuracy": 0.9737281067556297,
+            "tp": 921,
+            "fp": 23,
+            "tn": 1414,
+            "fn": 40,
+            "positive_predictions": 944,
+            "negative_predictions": 1454,
+            "actual_positives": 961,
+            "actual_negatives": 1437
+        },
+        "validation": {
+            "roc_auc": 0.94414965232129,
+            "pr_auc": 0.9359564038942598,
+            "brier_score": 0.08937391901651463,
+            "precision": 0.8743455497382199,
+            "recall": 0.8226600985221675,
+            "f1": 0.8477157360406091,
+            "accuracy": 0.8832684824902723,
+            "tp": 167,
+            "fp": 24,
+            "tn": 287,
+            "fn": 36,
+            "positive_predictions": 191,
+            "negative_predictions": 323,
+            "actual_positives": 203,
+            "actual_negatives": 311
+        },
+        "test": {
+            "roc_auc": 0.9520363408521303,
+            "pr_auc": 0.9502614622808858,
+            "brier_score": 0.08370862567596679,
+            "precision": 0.8737864077669902,
+            "recall": 0.8571428571428571,
+            "f1": 0.8653846153846154,
+            "accuracy": 0.8910505836575876,
+            "tp": 180,
+            "fp": 26,
+            "tn": 278,
+            "fn": 30,
+            "positive_predictions": 206,
+            "negative_predictions": 308,
+            "actual_positives": 210,
+            "actual_negatives": 304
+        }
+    },
+    "threshold_analysis_validation": [
+        {
+            "threshold": 0.3,
+            "precision": 0.734375,
+            "recall": 0.9261083743842364,
+            "f1": 0.8191721132897604,
+            "accuracy": 0.8385214007782101,
+            "tp": 188,
+            "fp": 68,
+            "tn": 243,
+            "fn": 15
+        },
+        {
+            "threshold": 0.35,
+            "precision": 0.7647058823529411,
+            "recall": 0.896551724137931,
+            "f1": 0.8253968253968254,
+            "accuracy": 0.8501945525291829,
+            "tp": 182,
+            "fp": 56,
+            "tn": 255,
+            "fn": 21
+        },
+        {
+            "threshold": 0.4,
+            "precision": 0.7972972972972973,
+            "recall": 0.8719211822660099,
+            "f1": 0.8329411764705882,
+            "accuracy": 0.8618677042801557,
+            "tp": 177,
+            "fp": 45,
+            "tn": 266,
+            "fn": 26
+        },
+        {
+            "threshold": 0.45,
+            "precision": 0.8292682926829268,
+            "recall": 0.8374384236453202,
+            "f1": 0.8333333333333334,
+            "accuracy": 0.867704280155642,
+            "tp": 170,
+            "fp": 35,
+            "tn": 276,
+            "fn": 33
+        },
+        {
+            "threshold": 0.5,
+            "precision": 0.8743455497382199,
+            "recall": 0.8226600985221675,
+            "f1": 0.8477157360406091,
+            "accuracy": 0.8832684824902723,
+            "tp": 167,
+            "fp": 24,
+            "tn": 287,
+            "fn": 36
+        },
+        {
+            "threshold": 0.55,
+            "precision": 0.9204545454545454,
+            "recall": 0.7980295566502463,
+            "f1": 0.8548812664907651,
+            "accuracy": 0.8929961089494164,
+            "tp": 162,
+            "fp": 14,
+            "tn": 297,
+            "fn": 41
+        },
+        {
+            "threshold": 0.6,
+            "precision": 0.9506172839506173,
+            "recall": 0.7586206896551724,
+            "f1": 0.8438356164383561,
+            "accuracy": 0.8891050583657587,
+            "tp": 154,
+            "fp": 8,
+            "tn": 303,
+            "fn": 49
+        },
+        {
+            "threshold": 0.65,
+            "precision": 0.9607843137254902,
+            "recall": 0.7241379310344828,
+            "f1": 0.8258426966292135,
+            "accuracy": 0.8793774319066148,
+            "tp": 147,
+            "fp": 6,
+            "tn": 305,
+            "fn": 56
+        },
+        {
+            "threshold": 0.7,
+            "precision": 0.9659863945578231,
+            "recall": 0.6995073891625616,
+            "f1": 0.8114285714285714,
+            "accuracy": 0.8715953307392996,
+            "tp": 142,
+            "fp": 5,
+            "tn": 306,
+            "fn": 61
+        }
+    ],
+    "feature_importances": [
+        {
+            "feature": "fallback_count_t3",
+            "importance": 0.204417846490925
+        },
+        {
+            "feature": "running_confidence_t3",
+            "importance": 0.19282664625060367
+        },
+        {
+            "feature": "running_sentiment_score_t3",
+            "importance": 0.1383697672672009
+        },
+        {
+            "feature": "current_sentiment_t3_Positive",
+            "importance": 0.045681362538145635
+        },
+        {
+            "feature": "days_past_due_at_call",
+            "importance": 0.036728755364256294
+        },
+        {
+            "feature": "current_sentiment_t3_Negative",
+            "importance": 0.03422552793634901
+        },
+        {
+            "feature": "call_duration_so_far_t3",
+            "importance": 0.026717411714378116
+        },
+        {
+            "feature": "outstanding_amount_at_call",
+            "importance": 0.025354069933101558
+        },
+        {
+            "feature": "risk_segment_at_call_Low",
+            "importance": 0.021983617542525043
+        },
+        {
+            "feature": "dpd_bucket_at_call_0",
+            "importance": 0.02144368362781192
+        },
+        {
+            "feature": "detected_intent_at_t3_nan",
+            "importance": 0.020868236508288507
+        },
+        {
+            "feature": "previous_call_count",
+            "importance": 0.014230773290701706
+        },
+        {
+            "feature": "risk_segment_at_call_High",
+            "importance": 0.013144980409732202
+        },
+        {
+            "feature": "previous_fallback_count",
+            "importance": 0.012580774734046245
+        },
+        {
+            "feature": "bot_version_v1.0",
+            "importance": 0.011077646877366329
+        },
+        {
+            "feature": "current_sentiment_t3_Neutral",
+            "importance": 0.010563095898471257
+        },
+        {
+            "feature": "dpd_bucket_at_call_90+",
+            "importance": 0.0066708809736595875
+        },
+        {
+            "feature": "bot_version_v2.0",
+            "importance": 0.006449259955777575
+        },
+        {
+            "feature": "previous_escalation_count",
+            "importance": 0.006211540111109986
+        },
+        {
+            "feature": "language_English",
+            "importance": 0.0059042209600209195
+        }
+    ],
+    "execution_status": "SUCCESS"
+}

@@ -1,0 +1,15 @@
+table WhatIf_ProductiveHours
+	lineageTag: 5d6801e3-8f94-4312-a381-eb8048f3a5d1
+
+	measure 'WhatIf_ProductiveHours Value' = SELECTEDVALUE('WhatIf_ProductiveHours'[Value], 6)
+		lineageTag: 257801c2-43bf-48a2-9f28-34f264b73ca3
+
+	column Value
+		lineageTag: c4337a85-31d1-4ac0-a5a7-b59d180b4676
+		isNameInferred
+		sourceColumn: [Value]
+
+	partition WhatIf_ProductiveHours = calculated
+		mode: import
+		source = GENERATESERIES(0, 12, 0.5)
+

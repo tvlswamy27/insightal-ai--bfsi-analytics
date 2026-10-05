@@ -1,0 +1,124 @@
+table 'insightal_analytics dim_date'
+	lineageTag: b176532c-4f1f-4ea6-90a6-5a938e3d89d7
+	dataCategory: Time
+
+	column date_key
+		dataType: int64
+		formatString: 0
+		lineageTag: 6f9bd792-1da1-4e8e-acf3-1696cdbd231e
+		summarizeBy: none
+		sourceColumn: date_key
+
+		annotation SummarizationSetBy = Automatic
+
+	column date
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 4b98a8bf-8f5f-4faa-a5f9-c350572af292
+		summarizeBy: none
+		sourceColumn: date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column day
+		dataType: int64
+		formatString: 0
+		lineageTag: 7a9e767a-cae0-4198-ae87-abc1b65c0e7f
+		summarizeBy: sum
+		sourceColumn: day
+
+		annotation SummarizationSetBy = Automatic
+
+	column day_name
+		dataType: string
+		lineageTag: 00d3de2d-d179-4a37-a7a8-6a9025dfa838
+		summarizeBy: none
+		sourceColumn: day_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column week
+		dataType: int64
+		formatString: 0
+		lineageTag: 422d3de7-40ba-464a-b8b4-2ac301d21257
+		summarizeBy: sum
+		sourceColumn: week
+
+		annotation SummarizationSetBy = Automatic
+
+	column month
+		dataType: int64
+		formatString: 0
+		lineageTag: b492a0ed-c096-42ab-869c-5d405eb2460e
+		summarizeBy: sum
+		sourceColumn: month
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_name
+		dataType: string
+		lineageTag: ddbf61d6-e12f-4235-b51e-ebdbb1bff87b
+		summarizeBy: none
+		sourceColumn: month_name
+		sortByColumn: month_number
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_number
+		dataType: int64
+		formatString: 0
+		lineageTag: 1d70e2e8-d943-4f2d-8196-3152c14a18dd
+		summarizeBy: sum
+		sourceColumn: month_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 004c514b-e888-49be-a6cd-13aaa4a433e8
+		summarizeBy: sum
+		sourceColumn: quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		lineageTag: 4133b24d-0bc4-4eba-b9aa-b7ffc8337db2
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column financial_year
+		dataType: string
+		lineageTag: 31bd60f6-d82f-40fb-8d81-9159c05d45cf
+		summarizeBy: none
+		sourceColumn: financial_year
+
+		annotation SummarizationSetBy = Automatic
+
+	column is_weekend
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: bb251bd7-1976-4e6d-b4a3-e55f332a9e81
+		summarizeBy: none
+		sourceColumn: is_weekend
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'insightal_analytics dim_date' = m
+		mode: import
+		source =
+				let
+				    Source = MySQL.Database("localhost:3306", "insightal_analytics", [ReturnSingleDatabase=true]),
+				    insightal_analytics_dim_date = Source{[Schema="insightal_analytics",Item="dim_date"]}[Data]
+				in
+				    insightal_analytics_dim_date
+

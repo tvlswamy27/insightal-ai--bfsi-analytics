@@ -1,0 +1,15 @@
+table WhatIf_AgentCallDuration
+	lineageTag: f5eca97b-ac73-483d-aa65-7d858b038958
+
+	measure 'WhatIf_AgentCallDuration Value' = SELECTEDVALUE('WhatIf_AgentCallDuration'[Value], 300)
+		lineageTag: 610e10eb-27b2-4271-b40b-7bd4b7aeaa92
+
+	column Value
+		lineageTag: ec37c897-f65f-47d4-81bd-5fd3d35cba44
+		isNameInferred
+		sourceColumn: [Value]
+
+	partition WhatIf_AgentCallDuration = calculated
+		mode: import
+		source = GENERATESERIES(0, 600, 10)
+

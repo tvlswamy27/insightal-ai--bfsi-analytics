@@ -128,7 +128,7 @@ Identify factors associated with human escalation, failed task completion, and p
 - **Contact Rate:** `(Customers Contacted / Total Unique Customers Targeted) × 100`
 - **PTP Rate:** `(Calls Resulting in PTP / Eligible Connected Collections Calls) × 100`
 - **Successful PTP Rate:** `(PTPs Resulting in Actual Payment / Total PTPs) × 100`
-- **Collection Conversion Rate:** `(Customers Making a Successful Payment / Customers with a PTP) × 100`
+- **Collection Conversion Rate:** Distinct customers with successful PTP/payment outcome / Distinct customers with PTP among connected Loan Collections calls. The final validated Power BI result is: 67.83%
 - **PTP Amount:** Total promised payment amount.
 - **Successful Collection Amount:** Total actual payment amount.
 - **Outstanding Amount:** Total outstanding amount associated with the eligible population.

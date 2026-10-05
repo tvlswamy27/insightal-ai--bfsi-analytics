@@ -1,0 +1,42 @@
+relationship 0d362ffc-bce8-4445-8200-23b69b33b7b9
+	fromColumn: 'insightal_analytics fact_calls'.bot_key
+	toColumn: 'insightal_analytics dim_bot'.bot_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship c4d76438-ef09-410c-a77e-0908c8125137
+	fromColumn: 'insightal_analytics fact_calls'.campaign_key
+	toColumn: 'insightal_analytics dim_campaign'.campaign_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 2055901c-564b-4584-88dc-416e494a0226
+	fromColumn: 'insightal_analytics fact_calls'.customer_key
+	toColumn: 'insightal_analytics dim_customer'.customer_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 7dbc96b3-b6c1-4679-820b-bfd9d6b5a376
+	fromColumn: 'insightal_analytics fact_calls'.date_key
+	toColumn: 'insightal_analytics dim_date'.date_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 2d1fc342-c5d3-4b38-bc01-c449c24614b6
+	fromColumn: 'insightal_analytics fact_conversation'.call_key
+	toColumn: 'insightal_analytics fact_calls'.call_key
+
+	annotation PBI_IsFromSource = FS
+
+relationship 'insightal_analytics fact_calls_intent_key_dim_intent_call_intent_key'
+	fromColumn: 'insightal_analytics fact_calls'.intent_key
+	toColumn: dim_intent_call.intent_key
+
+relationship 'insightal_analytics fact_conversation_expected_intent_key_dim_intent_expected_intent_key'
+	fromColumn: 'insightal_analytics fact_conversation'.expected_intent_key
+	toColumn: dim_intent_expected.intent_key
+
+relationship 'insightal_analytics fact_conversation_detected_intent_key_dim_intent_detected_intent_key'
+	fromColumn: 'insightal_analytics fact_conversation'.detected_intent_key
+	toColumn: dim_intent_detected.intent_key
+

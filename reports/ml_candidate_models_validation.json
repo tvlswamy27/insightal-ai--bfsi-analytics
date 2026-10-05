@@ -1,0 +1,18 @@
+{
+    "dataset_unchanged": true,
+    "rows_3426": true,
+    "features_20": true,
+    "no_target_in_X": true,
+    "no_identifiers_in_X": true,
+    "no_prohibited_fields": true,
+    "chronological_split_preserved": true,
+    "train_preprocessing_only": true,
+    "validation_not_used_for_test": true,
+    "test_untouched_for_selection": true,
+    "finite_predictions": true,
+    "probabilities_between_0_1": true,
+    "no_duplicate_snapshots": true,
+    "model_artifacts_exist": true,
+    "figure_artifacts_exist": true,
+    "reports_exist": true
+}

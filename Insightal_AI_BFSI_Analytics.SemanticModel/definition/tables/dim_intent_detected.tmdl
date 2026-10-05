@@ -1,0 +1,37 @@
+table dim_intent_detected
+	lineageTag: 943f7ce2-aba6-451c-9ed4-97674e7088c2
+
+	column intent_key
+		lineageTag: 149d2130-d0d1-4c4e-9864-d3a2386cbd27
+		isNameInferred
+		sourceColumn: insightal_analytics dim_intent[intent_key]
+
+	column intent_id
+		lineageTag: b0b477b3-6152-429d-8e5a-bd740adb3476
+		isNameInferred
+		sourceColumn: insightal_analytics dim_intent[intent_id]
+
+	column intent_name
+		lineageTag: 8ee788ac-04a4-49a3-b230-31f7585ba927
+		isNameInferred
+		sourceColumn: insightal_analytics dim_intent[intent_name]
+
+	column intent_category
+		lineageTag: 086157b3-6319-4684-b744-2f048ba5674e
+		isNameInferred
+		sourceColumn: insightal_analytics dim_intent[intent_category]
+
+	column business_function
+		lineageTag: 7511cb27-bd06-4458-806a-d86ea192674b
+		isNameInferred
+		sourceColumn: insightal_analytics dim_intent[business_function]
+
+	column expected_task
+		lineageTag: d36953d8-133e-4f03-bd42-5b8399a12b8d
+		isNameInferred
+		sourceColumn: insightal_analytics dim_intent[expected_task]
+
+	partition dim_intent_detected = calculated
+		mode: import
+		source = 'insightal_analytics dim_intent'
+
