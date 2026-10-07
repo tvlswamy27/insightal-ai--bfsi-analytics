@@ -249,8 +249,7 @@ insightal-ai--bfsi-analytics/
 ├── artifacts/
 ├── notebooks/
 ├── data/
-├── Insightal_AI_BFSI_Analytics.pbix
-└── README.md
+└── Insightal_AI_BFSI_Analytics.pbix
 ```
 
 ## 19. Reproducibility / Setup
