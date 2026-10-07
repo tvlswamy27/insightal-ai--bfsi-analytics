@@ -71,4 +71,4 @@ Post-execution, the pipeline runs `sql/11_validate_database.sql` to verify:
 - Zero foreign key violations (no orphan records).
 - Strict payment and attribution rules (e.g., `payment_status = 'Success'` implies `payment_amount > 0`).
 
-The validation results are automatically captured and exported to `docs/phase5_validation_report.md`.
+The validation results are automatically captured and exported to `docs/etl_validation.md`.

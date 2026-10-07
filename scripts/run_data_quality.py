@@ -313,7 +313,7 @@ df_audit = pd.DataFrame(audit_records)
 df_audit.to_sql('data_quality_results', engine, schema='insightal_staging', if_exists='append', index=False)
 
 # Markdown Report Generation
-with open("docs/phase6_data_quality_report.md", "w") as f:
+with open("docs/data_quality_report.md", "w") as f:
     f.write(f"# Phase 6 Data Quality Report\n")
     f.write(f"**Run ID:** {run_id}\n")
     f.write(f"**Timestamp:** {run_timestamp}\n")
@@ -351,7 +351,7 @@ json_data = {
     ]
 }
 os.makedirs("reports", exist_ok=True)
-with open("reports/phase6_data_quality_results.json", "w") as f:
+with open("reports/data_quality_results.json", "w") as f:
     json.dump(json_data, f, indent=4)
 
 print(f"\nPHASE 6 DATA QUALITY STATUS: {overall_status}")
@@ -385,8 +385,8 @@ print(f"\nStatistical Checks:\n{'PASS' if df_audit[df_audit['check_name'].str.co
 print(f"\nBaseline Comparison:\n{'WARN' if df_audit[df_audit['check_type'] == 'BASELINE']['status'].eq('WARN').any() else 'PASS'}")
 
 print(f"\nAudit Table:\ninsightal_staging.data_quality_results")
-print(f"\nMarkdown Report:\ndocs/phase6_data_quality_report.md")
-print(f"\nJSON Report:\nreports/phase6_data_quality_results.json")
+print(f"\nMarkdown Report:\ndocs/data_quality_report.md")
+print(f"\nJSON Report:\nreports/data_quality_results.json")
 print(f"\nPipeline Exit Code:\n{1 if overall_status == 'FAIL' else 0}")
 
 print(f"\nExact execution command:\npython scripts/run_data_quality.py")

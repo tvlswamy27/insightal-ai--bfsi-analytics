@@ -1,8 +1,8 @@
 {
     "run_id": "PHASE-8-FINAL-HARDENED-QA",
-    "timestamp": 1790232457.53812,
+    "timestamp": 1791358142.5375876,
     "execution_status": "SUCCESS",
-    "execution_time_seconds": 8.409939765930176,
+    "execution_time_seconds": 11.147371053695679,
     "source_row_counts": {
         "fact_calls": 9885,
         "fact_conversation": 38978,

@@ -77,7 +77,7 @@ sections = {
     'J': 'J. Database engine validation'
 }
 
-with open('docs/phase5_validation_report.md', 'w') as report:
+with open('docs/etl_validation.md', 'w') as report:
     report.write("# Phase 5 Validation Report\n\n")
     
     with connection.cursor() as cursor:
@@ -172,7 +172,7 @@ if critical_failed:
     print("\nETL FAILED: Critical validations did not pass.")
     for msg in critical_messages:
         print(f" - {msg}")
-    print("See docs/phase5_validation_report.md for details.")
+    print("See docs/etl_validation.md for details.")
     sys.exit(1)
 else:
-    print("\nPHASE 5 ETL STATUS: PASS. Validation report generated at docs/phase5_validation_report.md")
+    print("\nPHASE 5 ETL STATUS: PASS. Validation report generated at docs/etl_validation.md")

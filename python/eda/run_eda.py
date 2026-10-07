@@ -311,7 +311,7 @@ This project uses synthetic/anonymized data for portfolio and analytical demonst
 ## 24. Reproducibility
 Run `python python/eda/run_eda.py`.
 """
-    with open('docs/phase8_python_eda.md', 'w', encoding='utf-8') as f:
+    with open('docs/python_eda.md', 'w', encoding='utf-8') as f:
         f.write(doc)
 
     nb = {"cells": [
@@ -343,7 +343,7 @@ Run `python python/eda/run_eda.py`.
         {"cell_type": "markdown", "metadata": {}, "source": ["## 14. Outliers"]},
         {"cell_type": "code", "metadata": {}, "source": ["m11 = importlib.import_module('11_outlier_analysis')\noutliers = m11.run_outliers(df_calls)\nprint(\"Outlier analysis generated.\")"], "outputs": [], "execution_count": None},
         {"cell_type": "markdown", "metadata": {}, "source": ["## 15. Statistical Tests"]},
-        {"cell_type": "code", "metadata": {}, "source": ["# Print tests from JSON report\nwith open('reports/phase8_eda_report.json', 'r') as f:\n    r_json = json.load(f)\nfor t in r_json['statistical_tests']:\n    if t['status'] == 'VALID':\n        print(f\"{t['test_name']} | {t['variables']} | n={t['n']} | stat={t['statistic']:.4f} | p={t['p_value']:.4f} | {t['interpretation']}\")"], "outputs": [], "execution_count": None},
+        {"cell_type": "code", "metadata": {}, "source": ["# Print tests from JSON report\nwith open('reports/eda_results.json', 'r') as f:\n    r_json = json.load(f)\nfor t in r_json['statistical_tests']:\n    if t['status'] == 'VALID':\n        print(f\"{t['test_name']} | {t['variables']} | n={t['n']} | stat={t['statistic']:.4f} | p={t['p_value']:.4f} | {t['interpretation']}\")"], "outputs": [], "execution_count": None},
         {"cell_type": "markdown", "metadata": {}, "source": ["## 16. ML Readiness"]},
         {"cell_type": "code", "metadata": {}, "source": ["m12 = importlib.import_module('12_ml_readiness')\nml_inv = m12.run_ml_readiness()\nprint(f\"Allowed features: {len(ml_inv['allowed'])}, Prohibited features: {len(ml_inv['prohibited'])}\")"], "outputs": [], "execution_count": None},
         {"cell_type": "markdown", "metadata": {}, "source": ["## 17. Key Findings"]},
@@ -351,7 +351,7 @@ Run `python python/eda/run_eda.py`.
         {"cell_type": "markdown", "metadata": {}, "source": ["## 18. Limitations\nLimitations: Observational data, descriptive analysis does not establish causality."]},
     ], "metadata": {}, "nbformat": 4, "nbformat_minor": 4}
     
-    with open('reports/phase8_eda_report.json', 'w', encoding='utf-8') as f:
+    with open('reports/eda_results.json', 'w', encoding='utf-8') as f:
         json.dump(report, f, indent=4, cls=NpEncoder)
         
     with open('notebooks/phase8_eda.ipynb', 'w', encoding='utf-8') as f:
@@ -360,7 +360,7 @@ Run `python python/eda/run_eda.py`.
     # FINAL AUDIT QA GATE
     audit = {}
     
-    with open('reports/phase8_eda_report.json', 'r', encoding='utf-8') as f:
+    with open('reports/eda_results.json', 'r', encoding='utf-8') as f:
         rep = json.load(f)
         
     audit['FINAL-AUDIT-001'] = {"desc": "JSON report schema complete", "status": "FAIL"}
@@ -406,7 +406,7 @@ Run `python python/eda/run_eda.py`.
     audit['FINAL-AUDIT-016'] = {"desc": "ML readiness populated", "status": "PASS" if rep['ml_readiness'] else "FAIL"}
     
     # Document checks
-    with open('docs/phase8_python_eda.md', 'r', encoding='utf-8') as f:
+    with open('docs/python_eda.md', 'r', encoding='utf-8') as f:
         doc_content = f.read()
     
     req_sections = ["1. Phase Objective", "7. Data Quality", "24. Reproducibility", "21. Key Findings"]
@@ -442,7 +442,7 @@ Run `python python/eda/run_eda.py`.
     rep['final_audit'] = audit
     rep['execution_status'] = "SUCCESS" if (audit_failures == 0 and failed_val == 0) else "FAIL"
     
-    with open('reports/phase8_eda_report.json', 'w', encoding='utf-8') as f:
+    with open('reports/eda_results.json', 'w', encoding='utf-8') as f:
         json.dump(rep, f, indent=4, cls=NpEncoder)
 
     if rep['execution_status'] == "FAIL":
@@ -461,8 +461,8 @@ Run `python python/eda/run_eda.py`.
         print(f"Final Audit Checks: {len(audit)}")
         print(f"Final Audit Failures: {audit_failures}")
         print(f"\\nExecution Time: {time.time()-start:.2f}s")
-        print(f"\\nDocumentation: docs/phase8_python_eda.md")
-        print(f"JSON Report: reports/phase8_eda_report.json")
+        print(f"\\nDocumentation: docs/python_eda.md")
+        print(f"JSON Report: reports/eda_results.json")
         print(f"Notebook: notebooks/phase8_eda.ipynb")
         print(f"Artifact Directory: artifacts/eda/")
         print(f"\\nPHASE 8 NOT COMPLETE — FIX REQUIRED ISSUES")
@@ -483,8 +483,8 @@ Run `python python/eda/run_eda.py`.
     print(f"Final Audit Checks: {len(audit)}")
     print(f"Final Audit Failures: {audit_failures}")
     print(f"\\nExecution Time: {time.time()-start:.2f}s")
-    print(f"\\nDocumentation: docs/phase8_python_eda.md")
-    print(f"JSON Report: reports/phase8_eda_report.json")
+    print(f"\\nDocumentation: docs/python_eda.md")
+    print(f"JSON Report: reports/eda_results.json")
     print(f"Notebook: notebooks/phase8_eda.ipynb")
     print(f"Artifact Directory: artifacts/eda/")
     print(f"\\nPHASE 8 COMPLETE — READY FOR PHASE 9")

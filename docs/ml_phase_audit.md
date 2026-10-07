@@ -5,14 +5,14 @@ The repository is well-structured and contains artifacts from all 9 previous com
 - `docs/`: Contains specifications, architecture, and data dictionary.
 - `python/`: Contains EDA modules (`python/eda/`).
 - `sql/`: Contains raw, staging, and analytics layer SQL scripts.
-- `reports/`: Contains validation and EDA outputs (`phase6_data_quality_results.json`, `phase8_eda_report.json`).
+- `reports/`: Contains validation and EDA outputs (`data_quality_results.json`, `eda_results.json`).
 - `Insightal_AI_BFSI_Analytics.Report/` & `Insightal_AI_BFSI_Analytics.SemanticModel/`: Power BI assets.
 - `pbix_unzipped/`, `notebooks/`, `scripts/`, `data/`, etc.
 
 ## 2. Existing ML-Related Assets
 - `python/eda/12_ml_readiness.py`: Identifies allowed vs. prohibited fields for ML and explicitly outlines leakage risks.
 - `docs/data_dictionary.md`: Contains a robust specification of field timing ("ML Elig" and "Leakage" columns) ensuring point-in-time validity.
-- `reports/phase8_eda_report.json`: Contains insights on data distribution that can be used to inform ML expectations.
+- `reports/eda_results.json`: Contains insights on data distribution that can be used to inform ML expectations.
 
 ## 3. Available Source Fields
 According to `12_ml_readiness.py` and `docs/data_dictionary.md`, the following fields are available prior to the prediction point:

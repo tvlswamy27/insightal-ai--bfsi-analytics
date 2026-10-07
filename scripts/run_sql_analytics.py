@@ -137,7 +137,7 @@ def main():
     finally:
         conn.close()
 
-    with open('reports/phase7_sql_validation.json', 'w') as f:
+    with open('reports/sql_validation_results.json', 'w') as f:
         json.dump(results, f, indent=4, cls=CustomJSONEncoder)
 
     status = 'PASS' if results['failed_queries'] == 0 and results['validation_failures'] == 0 else 'FAIL'
@@ -161,8 +161,8 @@ def main():
     print(f"  Total SQL Execution Time: {total_ms:.2f} ms")
     
     print("\nKnown Warnings: Intentional nulls in demographic data and standard statistical variances from synthetic baseline.")
-    print("Documentation: docs/phase7_sql_analytics.md")
-    print("Validation Report: reports/phase7_sql_validation.json")
+    print("Documentation: docs/sql_analytics.md")
+    print("Validation Report: reports/sql_validation_results.json")
     print("\nPHASE 7 COMPLETE  AWAITING REVIEW")
 
 if __name__ == '__main__':
