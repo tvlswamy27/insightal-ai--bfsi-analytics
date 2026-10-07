@@ -249,9 +249,8 @@ insightal-ai--bfsi-analytics/
 ├── artifacts/
 ├── notebooks/
 ├── data/
-├── Insightal_AI_BFSI_Analytics.pbip
-├── Insightal_AI_BFSI_Analytics.Report/
-└── Insightal_AI_BFSI_Analytics.SemanticModel/
+├── Insightal_AI_BFSI_Analytics.pbix
+└── README.md
 ```
 
 ## 19. Reproducibility / Setup
@@ -266,7 +265,7 @@ To reproduce the project environment locally:
    - `DB_PASSWORD`
 4. Run the ETL and data quality workflows (`run_etl.py`, `scripts/run_data_quality.py`).
 5. Run the ML pipeline sequentially inside the `ml/` directory.
-6. Open `Insightal_AI_BFSI_Analytics.pbip` in Power BI Desktop to view the dashboard.
+6. Open `Insightal_AI_BFSI_Analytics.pbix` in Power BI Desktop to view the dashboard.
 
 ## 20. Synthetic Data & Privacy
 
